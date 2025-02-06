@@ -111,7 +111,7 @@ a {
 
 /* start landing */
 .landing {
-  background-image: url(/img/background-3.jpg);
+  background-image: url(../img/background-3.jpg);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -830,8 +830,6 @@ footer p {
 /* end spare */
 
 /* start section */
-.section {
-}
 .section h2 {
   background-color: red;
   color: white;
