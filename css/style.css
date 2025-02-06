@@ -114,6 +114,7 @@ a {
   background-image: url(../img/background-3.jpg);
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   height: 100vh;
   position: relative;
   background-attachment: fixed;
@@ -231,6 +232,14 @@ a {
   -moz-transform: translateY(-20px);
   -ms-transform: translateY(-20px);
   -o-transform: translateY(-20px);
+}
+@media (max-width: 768px) {
+  .about .text {
+    text-align: center;
+  }
+  .about .text a {
+    margin: auto !important;
+  }
 }
 /* end about */
 
