@@ -1,5 +1,12 @@
-// get data from productus.json
+// handel close menuBar after clicked out menu
+// let menuBar = document.querySelector(".navbar");
+// document.addEventListener("click", (e) => {
+//   if (!menuBar.contains(e.target)) {
+//     menuBar.attributes.remove('aria-expanded= "false" ');
+//   }
+// });
 
+// get data from productus.json
 let productSection = document.querySelector(".product-section");
 if (productSection) {
   let products = null;
@@ -58,7 +65,8 @@ if (productDetails) {
     }
     //   and if has, add data this product in html
     detail.querySelector("h1").innerText = thisproduct.name;
-    detail.querySelector("img").src = "../img/PRODUCTS/" + thisproduct.imge;
+    detail.querySelector(".img-main").src =
+      "../img/PRODUCTS/" + thisproduct.imge;
     detail.querySelector(".capacity").innerText = thisproduct.capacity;
     detail.querySelector(".weight").innerText = thisproduct.weight;
     detail.querySelector(".height").innerText = thisproduct.height;
@@ -68,27 +76,82 @@ if (productDetails) {
     detail.querySelector(".material").innerText = thisproduct.material;
     detail.querySelector(".tamper").innerText = thisproduct.tamper;
     detail.querySelector(".recyclable").innerText = thisproduct.recyclable;
-    // color
-    // detail.querySelector(".c-red").contains = thisproduct.colorRed;
-    // detail.querySelector(".c-red").className = thisproduct.colorRed;
+    detail.querySelector(".imd-Product-one").src =
+      "../img/PRODUCTS/detiles/" + thisproduct.imgProductOne;
+    detail.querySelector(".imd-Product-tow").src =
+      "../img/PRODUCTS/detiles/" + thisproduct.imgProductTow;
+    detail.querySelector(".imd-Product-three").src =
+      "../img/PRODUCTS/detiles/" + thisproduct.imgProductThree;
+    thisproduct.recyclable;
+    detail.querySelector(".Packaging").src =
+      "../img/PRODUCTS/detiles/" + thisproduct.imgProductPackaging;
+    thisproduct.recyclable;
+    detail.querySelector(".height-pallet").innerText = thisproduct.heightPallet;
+    detail.querySelector(".length-pallet").innerText = thisproduct.lengthPallet;
+    detail.querySelector(".width-pallet").innerText = thisproduct.widthPallet;
+    detail.querySelector(".layers-pallet").innerText = thisproduct.layersPallet;
+    detail.querySelector(".units-pallet").innerText = thisproduct.unitsPallet;
+    detail.querySelector(".number-pallet").innerText = thisproduct.numberPallet;
+    detail.querySelector(".Download").innerText = thisproduct.downloadtext;
+    detail.querySelector(".Download").href =
+      "../img/PRODUCTS/pdf/" + thisproduct.downloadHref;
+
+    // cap color
+    for (let i = 0; i < thisproduct.capColor.length; i++) {
+      let capsColors = document.querySelector(".caps-colors");
+      let span = document.createElement("span");
+      span.innerHTML = `
+      <div>
+          <span class="${thisproduct.capColor[i]}" data-color="${thisproduct.capColor[i]}"></span>
+      </div>
+      `;
+      capsColors.appendChild(span);
+    }
+
+    // bottle color
+    for (let i = 0; i < thisproduct.bottleColor.length; i++) {
+      let bottleColors = document.querySelector(".bottle-colors");
+      let span = document.createElement("span");
+      span.innerHTML = `
+      <div>
+          <span class="${thisproduct.bottleColor[i]}" data-color="${thisproduct.bottleColor[i]}"></span>
+      </div>
+      `;
+      bottleColors.appendChild(span);
+    }
   }
-  $(document).on("click", ".box-info a", function () {
-    $(this).removeClass("active");
-    $(this).addClass("active");
-  });
 
-  // handel love prodacte (heart)
-  let hearts = document.querySelectorAll(".box-info a");
+  // handel btn box-info
+  let btns = document.querySelectorAll(".box-info a");
 
-  hearts.forEach((heart) => {
-    heart.addEventListener("click", (event) => {
-      event.target.classList.toggle("active");
-      event.removeClass("active");
-      //   if (event.target.classList.contains("fa-solid")) {
-      //     event.target.style.color = "red";
-      //   } else {
-      //     event.target.style.color = "black";
-      //   }
-    });
-  });
+  // btns.forEach((btn) => {
+  //   btn.addEventListener("click", () => {
+  //     btns.forEach((el) => {
+  //       el.classList.remove("active");
+  //     });
+
+  //     btn.classList.add("active");
+  //   });
+  // });
 }
+
+// handel choice info detiles info
+let fillterBtnse = document.querySelectorAll(".fillter-btn a");
+let fillterBoxse = document.querySelectorAll(".detiles-info .box");
+
+const filltercards = (e) => {
+  document.querySelector(".active").classList.remove("active");
+  e.target.classList.add("active");
+  // handel ti add class hide
+  fillterBoxse.forEach((card) => {
+    card.classList.add("hide");
+
+    if (card.dataset.name === e.target.dataset.name) {
+      card.classList.remove("hide");
+    }
+  });
+};
+
+fillterBtnse.forEach((button) =>
+  button.addEventListener("click", filltercards)
+);
