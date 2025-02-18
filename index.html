@@ -13,6 +13,7 @@
     />
     <!-- main-bootstrap -->
     <link rel="stylesheet" href="lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="" id="cssrtl" class="cssrtlDot" />
     <!-- main-swiper -->
     <!-- <link
       rel="stylesheet"
@@ -50,16 +51,39 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="pages/about.html">ABOUT us</a></li>
-            <li><a href="pages/machine.html">MACHINES</a></li>
-            <li><a href="pages/molds.html">MOLDS</a></li>
-            <li><a href="pages/produst.html">PRODUCTS</a></li>
-            <li><a href="pages/contact.html">CONTACT us</a></li>
-            <li class="d-flex align-items-center justify-content-start">
-              <a href=""
-                ><img src="img/Ar.png" alt="" class="arbic-foto" loading="lazy"
-              /></a>
+            <li><a href="index.html" data-i18n="home">HOME</a></li>
+            <li><a href="pages/about.html" data-i18n="about">ABOUT US</a></li>
+            <li>
+              <a href="pages/machine.html" data-i18n="machines">MACHINES</a>
+            </li>
+            <li><a href="pages/molds.html" data-i18n="molds">MOLDS</a></li>
+            <li>
+              <a href="pages/produst.html" data-i18n="products">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="pages/contact.html" data-i18n="contact">CONTACT US</a>
+            </li>
+            <li
+              class="d-flex align-items-center justify-content-start language-selector"
+            >
+              <img
+                value="ar"
+                data-lan="ar"
+                src="img/ar.png"
+                alt=""
+                class="arbic-foto"
+                loading="lazy"
+                title="Arabic"
+              />
+              <img
+                value="en"
+                data-lan="en"
+                src="img/en.png"
+                alt=""
+                class="english-foto d-none"
+                loading="lazy"
+                title="English"
+              />
             </li>
           </ul>
         </div>
@@ -70,10 +94,18 @@
     <!-- start-landing -->
     <div class="landing">
       <div class="lnd-text text-center">
-        <h1>FABTECH Plastic</h1>
-        <p class="mb-4">FABTECH Factory Established in <span></span></p>
-        <a href="pages/about.html" class="special-btn-o"
-          >more Fabtech <i class="fa-solid fa-arrow-right ms-2 me-1"></i
+        <h1 data-i18n="landingh1Fabtech">FABTECH Plastic</h1>
+        <div class="text-nowrap">
+          <p class="mb-4" data-i18n="landingpFabtech">
+            FABTECH Factory Established in
+          </p>
+          <span></span>
+        </div>
+        <a
+          href="pages/about.html"
+          class="special-btn-o"
+          data-i18n="landingbtnFabtech"
+          >more Fabtech<i class="fa-solid fa-arrow-right ms-2 me-1"></i
         ></a>
       </div>
     </div>
@@ -86,8 +118,11 @@
           <div class="col-lg-4 text-center">
             <div class="box ms-3 me-3 bg-white mb-3">
               <i class="fa-solid fa-industry mt-3 mb-3 pt-3"></i>
-              <h3>Fabtech</h3>
-              <p class="text-black-50 ps-3 pe-3 pb-4 pt-3">
+              <h3 data-i18n="moduleh3fab">Fabtech</h3>
+              <p
+                class="text-black-50 ps-3 pe-3 pb-4 pt-3"
+                data-i18n="modulepfab"
+              >
                 FABTECH Factory Established in 1978, as a Professional Plastic &
                 Molds Manufacturer in Saudi Arabia.
               </p>
@@ -96,8 +131,11 @@
           <div class="col-lg-4 text-center">
             <div class="box ms-3 me-3 bg-white mb-3">
               <i class="fa-solid fa-bottle-water mt-3 mb-3 pt-3"></i>
-              <h3>Innovation</h3>
-              <p class="text-black-50 ps-3 pe-3 pb-4 pt-3">
+              <h3 data-i18n="moduleh3inv">Innovation</h3>
+              <p
+                class="text-black-50 ps-3 pe-3 pb-4 pt-3"
+                data-i18n="modulepinv"
+              >
                 We place strong emphasis on our innovative approach and
                 proprietary designs to enrich product portfolio with unique
               </p>
@@ -106,8 +144,11 @@
           <div class="col-lg-4 text-center">
             <div class="box ms-3 me-3 bg-white mb-3">
               <i class="fa-solid fa-boxes-stacked mt-3 mb-3 pt-3"></i>
-              <h3>Solutions</h3>
-              <p class="text-black-50 ps-3 pe-3 pb-4 pt-3">
+              <h3 data-i18n="moduleh3sol">Solutions</h3>
+              <p
+                class="text-black-50 ps-3 pe-3 pb-4 pt-3"
+                data-i18n="modulepsol"
+              >
                 The requirements for the final solution define which plastic
                 type is best suited for the specific product
               </p>
@@ -139,15 +180,18 @@
           </div>
           <div class="col-lg-6">
             <div class="text">
-              <h3 class="mb-4">Our Capabilities</h3>
-              <p class="text-black-50 mb-3">
+              <h3 class="mb-4" data-i18n="abouth3">Our Capabilities</h3>
+              <p class="text-black-50 mb-3" data-i18n="aboutp">
                 FABTECH Factory Established in 1978, as a Professional Plastic &
                 Molds Manufacturer in Saudi Arabia. We Design, Develop &
                 Manufacture high-Quality Molds & Plastic Products, Also offering
                 Maintenance & services related to our Products & Customer
                 Products .
               </p>
-              <a href="pages/about.html" class="special-btn-t d-block me-auto"
+              <a
+                href="pages/about.html"
+                class="special-btn-t d-block me-auto"
+                data-i18n="aboutbtn"
                 >About Us <i class="fa-solid fa-arrow-right ms-2 me-1"></i
               ></a>
             </div>
@@ -160,7 +204,7 @@
     <!-- start-product -->
     <div class="product pt-5 pb-5 text-center">
       <div class="container">
-        <h2>Our Service</h2>
+        <h2 data-i18n="producth2">Our Service</h2>
         <div class="row mb-4">
           <div class="col-6 col-lg-3 text-center">
             <div class="box bg-white position-relative mb-4">
@@ -170,7 +214,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>Vegetable Crate</h4>
+              <h4 data-i18n="productbox1">Vegetable Crate</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -181,7 +225,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>Jerry Cans</h4>
+              <h4 data-i18n="productbox2">Jerry Cans</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -192,7 +236,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>Staduim Seats</h4>
+              <h4 data-i18n="productbox3">Staduim Seats</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -203,7 +247,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>Rubbers</h4>
+              <h4 data-i18n="productbox4">Rubbers</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -214,7 +258,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>Injection</h4>
+              <h4 data-i18n="productbox5">Injection</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -225,7 +269,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>Molds</h4>
+              <h4 data-i18n="productbox6">Molds</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -236,7 +280,7 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>PVC Pipes</h4>
+              <h4 data-i18n="productbox7">PVC Pipes</h4>
             </div>
           </div>
           <div class="col-6 col-lg-3 text-center">
@@ -247,11 +291,16 @@
                 class="img-fluid"
                 loading="lazy"
               />
-              <h4>3D Print</h4>
+              <h4 data-i18n="productbox8">3D Print</h4>
             </div>
           </div>
         </div>
-        <a href="pages/produst.html" class="special-btn-t">Show More</a>
+        <a
+          href="pages/produst.html"
+          class="special-btn-t"
+          data-i18n="productbtn"
+          >Show More</a
+        >
       </div>
     </div>
     <!-- end-product -->
@@ -294,9 +343,9 @@
               loading="lazy"
             />
             <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Manufacturing</h5>
-              <p>
-                Some representative placeholder content for the first slide.
+              <h5 data-i18n="portflioh5man">Manufacturing</h5>
+              <p data-i18n="portfliopman">
+                We manufacture all types of injection and blow molding products.
               </p>
             </div>
           </div>
@@ -308,9 +357,9 @@
               loading="lazy"
             />
             <div class="carousel-caption d-none d-md-block text-white">
-              <h5>shipping</h5>
-              <p>
-                Some representative placeholder content for the second slide.
+              <h5 data-i18n="portflioh5spn">shipping</h5>
+              <p data-i18n="portfliopspn">
+                We ship products to you wherever you are.
               </p>
             </div>
           </div>
@@ -322,8 +371,8 @@
               loading="lazy"
             />
             <div class="carousel-caption d-none d-md-block text-white">
-              <h5>Storage</h5>
-              <p>
+              <h5 data-i18n="portflioh5sto">Storage</h5>
+              <p data-i18n="portfliopsto">
                 Some representative placeholder content for the third slide.
               </p>
             </div>
@@ -353,7 +402,7 @@
 
     <!-- end-certificates -->
     <div class="certificates pt-5 pb-5">
-      <h2 class="mb-5">Certificates</h2>
+      <h2 class="mb-5" data-i18n="certificates">Certificates</h2>
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-6 mb-4">
@@ -499,7 +548,7 @@
     <!-- start-script js -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
     <script src="lib/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/master.js"></script>
+    <script src="js/master.js" type="module"></script>
     <!-- end-script js -->
   </body>
 </html>

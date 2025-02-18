@@ -6,6 +6,8 @@
 //   }
 // });
 
+import translations from "./translations.js";
+
 // get data from productus.json
 let productSection = document.querySelector(".product-section");
 if (productSection) {
@@ -155,3 +157,52 @@ const filltercards = (e) => {
 fillterBtnse.forEach((button) =>
   button.addEventListener("click", filltercards)
 );
+
+// BTN language
+let languageAr = document.querySelector(".arbic-foto");
+let languageEn = document.querySelector(".english-foto");
+// languageAr.addEventListener("click", (fun) => {
+//   languageAr.classList.toggle("d-none");
+//   languageEn.classList.toggle("d-none");
+// });
+
+// languageEn.addEventListener("click", (fun) => {
+//   // languageAr.classList.add("d-none");
+//   languageEn.classList.add("d-none");
+//   languageAr.classList.remove("d-none");
+// });
+
+const languageSelector = document.querySelector(".language-selector");
+languageSelector.addEventListener("click", (event) => {
+  setLanguage(event.target.dataset.lan);
+  localStorage.setItem("lang", event.target.dataset.lan);
+  // console.log(event.target.value);
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  // const language = localStorage.getItem("lang");
+  setLanguage(localStorage.getItem("lang"));
+});
+let cssRtl = document.getElementById("cssrtl");
+const setLanguage = (language) => {
+  const elemants = document.querySelectorAll("[data-i18n]");
+  elemants.forEach((elemant) => {
+    const translationKey = elemant.getAttribute("data-i18n");
+    elemant.textContent = translations[language][translationKey];
+  });
+  if (language === "ar") {
+    document.dir = "rtl";
+    languageEn.classList.remove("d-none");
+    languageAr.classList.add("d-none");
+    if (document.getElementsByClassName("cssrtlDot")) {
+      cssRtl.href = "../lib/bootstrap/bootstrap.minrtl.css";
+    } else {
+      cssRtl.href = "lib/bootstrap/bootstrap.minrtl.css";
+    }
+  } else {
+    document.dir = "ltr";
+    languageEn.classList.add("d-none");
+    languageAr.classList.remove("d-none");
+    cssRtl.href = "";
+  }
+};

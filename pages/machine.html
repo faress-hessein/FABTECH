@@ -13,6 +13,7 @@
     />
     <!-- main-bootstrap -->
     <link rel="stylesheet" href="../lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="" id="cssrtl" />
     <!-- main-swiper -->
     <!-- <link
       rel="stylesheet"
@@ -50,20 +51,41 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li><a href="../index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT us</a></li>
-            <li><a href="machine.html">MACHINES</a></li>
-            <li><a href="molds.html">MOLDS</a></li>
-            <li><a href="produst.html">PRODUCTS</a></li>
-            <li><a href="contact.html">CONTACT us</a></li>
-            <li class="d-flex align-items-center justify-content-start">
-              <a href="#"
-                ><img
-                  src="../img/Ar.png"
-                  alt=""
-                  class="arbic-foto"
-                  loading="lazy"
-              /></a>
+            <li><a href="../index.html" data-i18n="home">HOME</a></li>
+            <li>
+              <a href="../pages/about.html" data-i18n="about">ABOUT US</a>
+            </li>
+            <li>
+              <a href="../pages/machine.html" data-i18n="machines">MACHINES</a>
+            </li>
+            <li><a href="../pages/molds.html" data-i18n="molds">MOLDS</a></li>
+            <li>
+              <a href="../pages/produst.html" data-i18n="products">PRODUCTS</a>
+            </li>
+            <li>
+              <a href="../pages/contact.html" data-i18n="contact">CONTACT US</a>
+            </li>
+            <li
+              class="d-flex align-items-center justify-content-start language-selector"
+            >
+              <img
+                value="ar"
+                data-lan="ar"
+                src="../img/ar.png"
+                alt=""
+                class="arbic-foto"
+                loading="lazy"
+                title="Arabic"
+              />
+              <img
+                value="en"
+                data-lan="en"
+                src="../img/en.png"
+                alt=""
+                class="english-foto d-none"
+                loading="lazy"
+                title="English"
+              />
             </li>
           </ul>
         </div>
@@ -299,8 +321,8 @@
 
     <!-- start-script js -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script> -->
-    <script src="../js/master.js"></script>
     <script src="../lib/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="../js/master.js" type="module"></script>
     <!-- end-script js -->
   </body>
 </html>

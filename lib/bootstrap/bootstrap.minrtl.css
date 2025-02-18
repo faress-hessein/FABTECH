@@ -1,0 +1,12 @@
+.ms-auto {
+  margin-left: 0 !important;
+  margin-right: auto !important;
+}
+.me-auto {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+}
+.ps-3 {
+  padding-left: 0 !important;
+  padding-right: 1rem !important;
+}

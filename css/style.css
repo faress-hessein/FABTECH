@@ -66,10 +66,13 @@ a {
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-.navbar .arbic-foto {
+.navbar .arbic-foto,
+.navbar .english-foto {
+  width: 30px;
   height: 20px;
   border-radius: 2px;
   display: block;
+  cursor: pointer;
 }
 .navbar .FABTECH {
   height: 60px;
@@ -77,10 +80,12 @@ a {
 .navbar ul a {
   text-decoration: none;
   text-transform: uppercase;
-  margin-right: 20px;
   color: var(--main-color);
   font-weight: 500;
   font-size: 15px;
+}
+.navbar ul li {
+  margin-right: 20px;
 }
 .navbar ul a:hover {
   color: var(--second-color);
@@ -147,6 +152,7 @@ a {
 .landing p {
   font-size: 20px;
   color: var(--main-color);
+  display: inline-block;
 }
 .landing span::before {
   content: "";
@@ -1021,6 +1027,7 @@ footer p {
   border: 1px solid black;
   background-color: green;
 }
+.product-details .light.blue,
 .product-details .bluish.white {
   position: relative;
   display: inline-block;
@@ -1038,6 +1045,15 @@ footer p {
   border-radius: 50%;
   border: 1px solid black;
   background-color: #3f66d2;
+}
+.product-details .pink {
+  position: relative;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: pink;
 }
 .product-details .box-info ul {
   padding: 0;
