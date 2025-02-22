@@ -10,3 +10,24 @@
   padding-left: 0 !important;
   padding-right: 1rem !important;
 }
+.me-1 {
+  margin-left: 0.25rem !important;
+}
+
+/* main css */
+footer .active a:hover {
+  transform: translateX(-10px) !important;
+  -webkit-transform: translateX(-10px) !important;
+  -moz-transform: translateX(-10px) !important;
+  -ms-transform: translateX(-10px) !important;
+  -o-transform: translateX(-10px) !important;
+}
+footer .active li a::before {
+  transform: rotatey(180deg) !important;
+  -webkit-transform: rotatey(180deg) !important;
+  -moz-transform: rotatey(180deg) !important;
+  -ms-transform: rotatey(180deg) !important;
+  -o-transform: rotatey(180deg) !important;
+  right: -16px !important;
+  left: auto !important;
+}

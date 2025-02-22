@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <!-- main-css -->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>About | Fabtech</title>
+    <title data-i18n="titleAbout">About | Fabtech</title>
   </head>
   <body>
     <!-- start-nav -->
@@ -66,26 +66,44 @@
               <a href="../pages/contact.html" data-i18n="contact">CONTACT US</a>
             </li>
             <li
-              class="d-flex align-items-center justify-content-start language-selector"
+              class="d-flex align-items-center justify-content-start language-selector position-relative"
             >
-              <img
+              <span
                 value="ar"
                 data-lan="ar"
-                src="../img/ar.png"
                 alt=""
-                class="arbic-foto"
+                class="arbic-foto d-flex align-items-center"
                 loading="lazy"
                 title="Arabic"
-              />
-              <img
+              >
+                <img
+                  src="../img/ar.png"
+                  class="arbic-foto me-1"
+                  value="ar"
+                  data-lan="ar"
+                />
+                <span value="ar" data-lan="ar" data-i18n="translationsArabic"
+                  >Arabic</span
+                >
+              </span>
+              <span
                 value="en"
                 data-lan="en"
-                src="../img/en.png"
                 alt=""
-                class="english-foto d-none"
+                class="english-foto d-none d-flex align-items-center"
                 loading="lazy"
                 title="English"
-              />
+              >
+                <img
+                  src="../img/en.png"
+                  class="english-foto me-1"
+                  value="en"
+                  data-lan="en"
+                />
+                <span value="en" data-lan="en" data-i18n="translationsEnglish"
+                  >English</span
+                >
+              </span>
             </li>
           </ul>
         </div>
@@ -99,8 +117,8 @@
         <source src="../img/about.mp4" type="video/mp4" />
       </video>
       <div class="lnd-text text-center">
-        <h1>ABOUT FABTECH</h1>
-        <p class="mb-4">
+        <h1 data-i18n="landAboutH1">ABOUT FABTECH</h1>
+        <p class="mb-4" data-i18n="landAboutP">
           Professional Plastic & Molds Manufacturer in Saudi Arabia<span></span>
         </p>
       </div>
@@ -120,8 +138,8 @@
             />
           </div>
           <div class="col-lg-6">
-            <h2 class="mb-4">Welcome</h2>
-            <p class="text-black-50">
+            <h2 class="mb-4" data-i18n="WelcomeH2">Welcome</h2>
+            <p class="text-black-50" data-i18n="WelcomeP">
               FABTECH Factory Established in 1978, as a Professional Plastic &
               Molds Manufacturer in Saudi Arabia. We Design, Develop &
               Manufacture high-Quality Molds & Plastic Products, Also offering
@@ -135,7 +153,7 @@
     <!-- end-welcome -->
 
     <!-- start-time-line -->
-    <div class="time-line mt-5 mb-5">
+    <!-- <div class="time-line mt-5 mb-5">
       <div class="container-fluid">
         <div
           id="carouselExampleControls"
@@ -219,69 +237,187 @@
           </button>
         </div>
       </div>
+    </div> -->
+    <!-- end-time-line -->
+
+    <!-- start-time-line -->
+    <div class="time-line pb-5">
+      <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner line-border">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-6 position-relative">
+                  <div class="box top">
+                    <p data-i18n="timePone">
+                      Plastic Molds & Fabrication Spare Parts
+                    </p>
+                    <span>1978</span>
+                  </div>
+                </div>
+                <div class="col-6 position-relative">
+                  <div class="box bottom">
+                    <p data-i18n="timePtow">
+                      Plastic Molds, Spare Parts & Evaporative Cooler Pumps
+                    </p>
+                    <span>1983</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-6 position-relative">
+                  <div class="box bottom">
+                    <p data-i18n="timePthree">
+                      Plastic Molds, Fabricatior Spare Parts, Evaporative Cooler
+                      Pump & Air suction device.
+                    </p>
+                    <span>1988</span>
+                  </div>
+                </div>
+                <div class="col-6 position-relative">
+                  <div class="box top">
+                    <p data-i18n="timepfour">
+                      Plastic Molds, Spare Parts, Evaporative Cooler Pumps & Air
+                      suction devices. and motor for desert Coolers.
+                    </p>
+                    <span>2003</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col position-relative">
+                  <div class="box bottom">
+                    <p data-i18n="timepfive">
+                      Plastic Molds, Spare Parts, Evaporative Cooler Pumps & Air
+                      suction devices. and motor for desert Coolers.
+                    </p>
+                    <span data-i18n="timeSpanfive">2013 To present</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span aria-hidden="true">
+              <i class="fa-solid fa-chevron-left"></i
+            ></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span aria-hidden="true">
+              ><i class="fa-solid fa-chevron-right"></i
+            ></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
     </div>
     <!-- end-time-line -->
 
     <!-- start-social -->
-    <div
+    <!-- <div
       class="social d-flex align-items-center justify-content-center pt-4 pb-4"
     >
       <a href="#"><i class="fa-brands fa-youtube"></i></a>
       <a href="#"><i class="fa-brands fa-facebook"></i> </a>
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-    </div>
+    </div> -->
     <!-- end-social -->
 
     <!-- start-footer -->
     <footer class="pt-4">
       <div class="row pe-3 ps-3">
-        <div class="col-lg-4 mb-4">
-          <h5>Company</h5>
+        <div class="col-lg-4 mb-4 active">
+          <h5 data-i18n="footerCompany">Company</h5>
           <ul>
             <li>
-              <a href="../index.html">Home</a>
+              <a href="../index.html" data-i18n="footerHome">home</a>
             </li>
             <li>
-              <a href="../pages/about.html">About Us</a>
+              <a href="../pages/about.html" data-i18n="footerAbout">about us</a>
             </li>
             <li>
-              <a href="../pages/machine.html">MACHINES</a>
-            </li>
-            <li>
-              <a href="../pages/produst.html">PRODUCTS</a>
+              <a href="../pages/machine.html" data-i18n="footerMachines"
+                >machines</a
+              >
             </li>
           </ul>
         </div>
         <div class="col-lg-4 mb-4">
-          <h5>Contact us</h5>
+          <h5 data-i18n="footerContactus">Contact us</h5>
           <ul>
-            <li>8366, New Industrial Area, Riyadh 14334</li>
-            <li>phone: +966 11 265 1557</li>
-            <li>Sales: +966 53 348 1848 - 504410653</li>
-            <li>Email: info@fabtech.sa</li>
+            <li data-i18n="footerAdres">
+              Tihan Street, New Industrial City, Riyadh 14334
+            </li>
+            <li data-i18n="footerphone">phone: +966 11 265 1557</li>
+            <li data-i18n="footerSales">Sales: +966 53 348 1848 - 504410653</li>
+            <li>
+              <a
+                href="mailto:faris.husain@moldsfactory.com "
+                data-i18n="footerEmail"
+                >faris.husain@moldsfactory.com</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="col-lg-4 mb-4">
-          <h5>Production</h5>
+        <div class="col-lg-4 mb-4 active">
+          <h5 data-i18n="footerProduction">Production</h5>
           <ul>
             <li>
-              <a href="../pages/machine.html">Technology</a>
+              <a href="../pages/molds.html" data-i18n="footerMolds">molds</a>
             </li>
             <li>
-              <a href="../pages/produst.html">Products</a>
+              <a href="../pages/produst.html" data-i18n="footerProducts"
+                >products</a
+              >
             </li>
             <li>
-              <a href="../pages/molds.html">Molds</a>
-            </li>
-            <li>
-              <a href="../pages/about.html">Our customers</a>
+              <a href="../pages/contact.html" data-i18n="footertechnology"
+                >Contact us</a
+              >
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <p>©2025 Fabtech - All Rights Reserved</p>
+        <p data-i18n="footerCop">©2025 Fabtech - All Rights Reserved</p>
       </div>
     </footer>
     <!-- end-footer -->
