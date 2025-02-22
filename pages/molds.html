@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="../css/normalize.css" />
     <!-- main-css -->
     <link rel="stylesheet" href="../css/style.css" />
-    <title>Molds | Fabtech</title>
+    <title data-i18n="titleMolds">Molds | Fabtech</title>
   </head>
   <body>
     <!-- start-nav -->
@@ -66,26 +66,44 @@
               <a href="../pages/contact.html" data-i18n="contact">CONTACT US</a>
             </li>
             <li
-              class="d-flex align-items-center justify-content-start language-selector"
+              class="d-flex align-items-center justify-content-start language-selector position-relative"
             >
-              <img
+              <span
                 value="ar"
                 data-lan="ar"
-                src="../img/ar.png"
                 alt=""
-                class="arbic-foto"
+                class="arbic-foto d-flex align-items-center"
                 loading="lazy"
                 title="Arabic"
-              />
-              <img
+              >
+                <img
+                  src="../img/ar.png"
+                  class="arbic-foto me-1"
+                  value="ar"
+                  data-lan="ar"
+                />
+                <span value="ar" data-lan="ar" data-i18n="translationsArabic"
+                  >Arabic</span
+                >
+              </span>
+              <span
                 value="en"
                 data-lan="en"
-                src="../img/en.png"
                 alt=""
-                class="english-foto d-none"
+                class="english-foto d-none d-flex align-items-center"
                 loading="lazy"
                 title="English"
-              />
+              >
+                <img
+                  src="../img/en.png"
+                  class="english-foto me-1"
+                  value="en"
+                  data-lan="en"
+                />
+                <span value="en" data-lan="en" data-i18n="translationsEnglish"
+                  >English</span
+                >
+              </span>
             </li>
           </ul>
         </div>
@@ -96,9 +114,9 @@
     <!-- start-landing-molds -->
     <div class="landing-molds d-flex align-items-center justify-content-center">
       <div class="lnd-text text-center">
-        <h1>ABOUT MOLDS</h1>
-        <p class="mb-4">
-          Professional Molds Manufacturer in Saudi Arabia<span></span>
+        <h1 data-i18n="landingMoldsH1">ABOUT MOLDS</h1>
+        <p class="mb-4" data-i18n="landingMoldsP">
+          Professional Molds Manufacturer in Saudi Arabia
         </p>
       </div>
     </div>
@@ -106,12 +124,12 @@
 
     <!-- start-molds -->
     <div class="molds pt-5 pb-5">
-      <h2>MOLDS</h2>
+      <h2 data-i18n="mMoldsH2">MOLDS</h2>
       <div class="container">
         <div class="row pt-5">
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="box">
-              <span class="sold">sold</span>
+              <span class="sold" data-i18n="sold">sold</span>
               <img
                 src="../img/molds/molds (1).png"
                 alt=""
@@ -119,15 +137,21 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>Blow injection</span></div>
-                <div><span>Cavity:</span><span>2</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="injection">Blow injection</span>
+                </div>
+                <div><span data-i18n="Cavity">Cavity:</span><span>2</span></div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
             <div class="box">
-              <span class="sale">for sale</span>
+              <span class="sale" data-i18n="sale">for sale</span>
               <img
                 src="../img/molds/molds (2).png"
                 alt=""
@@ -135,9 +159,15 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>Blow mold</span></div>
-                <div><span>Cavity:</span><span>2</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="Blow">Blow mold</span>
+                </div>
+                <div><span data-i18n="Cavity">Cavity:</span><span>2</span></div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
@@ -150,9 +180,15 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>Blow mold</span></div>
-                <div><span>Cavity:</span><span>1</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="Blow">Blow mold</span>
+                </div>
+                <div><span data-i18n="Cavity">Cavity:</span><span>1</span></div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
@@ -165,9 +201,15 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>Blow mold</span></div>
-                <div><span>Cavity:</span><span>4</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="Blow">Blow mold</span>
+                </div>
+                <div><span data-i18n="Cavity">Cavity:</span><span>4</span></div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
@@ -178,7 +220,7 @@
 
     <!-- start-spare -->
     <div class="spare pt-5 pb-5">
-      <h2>SPARE PARTS</h2>
+      <h2 data-i18n="spareParts">SPARE PARTS</h2>
       <div class="container">
         <div class="row pt-5">
           <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
@@ -190,9 +232,14 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>mold</span></div>
-                <div><span>Weight (grams):</span><span>90</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div><span data-i18n="name">name:</span><span>mold</span></div>
+                <div>
+                  <span data-i18n="weight">Weight (grams):</span><span>90</span>
+                </div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
@@ -205,9 +252,18 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>logo</span></div>
-                <div><span>Weight (grams):</span><span>110</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="logo">logo</span>
+                </div>
+                <div>
+                  <span data-i18n="weight">Weight (grams):</span
+                  ><span>110</span>
+                </div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
@@ -220,9 +276,18 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>logo</span></div>
-                <div><span>Weight (grams):</span><span>110</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="logo">logo</span>
+                </div>
+                <div>
+                  <span data-i18n="weight">Weight (grams):</span
+                  ><span>110</span>
+                </div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="copper">copper</span>
+                </div>
               </div>
             </div>
           </div>
@@ -235,9 +300,18 @@
                 loading="lazy"
               />
               <div class="text-info">
-                <div><span>name:</span><span>spare parts</span></div>
-                <div><span>Weight (grams):</span><span>202</span></div>
-                <div><span>Material:</span><span>iron</span></div>
+                <div>
+                  <span data-i18n="name">name:</span
+                  ><span data-i18n="spareParts">spare parts</span>
+                </div>
+                <div>
+                  <span data-i18n="weight">Weight (grams):</span
+                  ><span>202</span>
+                </div>
+                <div>
+                  <span data-i18n="Material">Material:</span
+                  ><span data-i18n="iron">iron</span>
+                </div>
               </div>
             </div>
           </div>
@@ -247,65 +321,73 @@
     <!-- end-spare -->
 
     <!-- start-social -->
-    <div
+    <!-- <div
       class="social d-flex align-items-center justify-content-center pt-4 pb-4"
     >
       <a href="#"><i class="fa-brands fa-youtube"></i></a>
       <a href="#"><i class="fa-brands fa-facebook"></i> </a>
       <a href="#"><i class="fa-brands fa-instagram"></i></a>
       <a href="#"><i class="fa-brands fa-snapchat"></i></a>
-    </div>
+    </div> -->
     <!-- end-social -->
 
     <!-- start-footer -->
     <footer class="pt-4">
       <div class="row pe-3 ps-3">
-        <div class="col-lg-4 mb-4">
-          <h5>Company</h5>
+        <div class="col-lg-4 mb-4 active">
+          <h5 data-i18n="footerCompany">Company</h5>
           <ul>
             <li>
-              <a href="../index.html">Home</a>
+              <a href="../index.html" data-i18n="footerHome">home</a>
             </li>
             <li>
-              <a href="../pages/about.html">About Us</a>
+              <a href="../pages/about.html" data-i18n="footerAbout">about us</a>
             </li>
             <li>
-              <a href="../pages/machine.html">MACHINES</a>
-            </li>
-            <li>
-              <a href="../pages/produst.html">PRODUCTS</a>
+              <a href="../pages/machine.html" data-i18n="footerMachines"
+                >machines</a
+              >
             </li>
           </ul>
         </div>
         <div class="col-lg-4 mb-4">
-          <h5>Contact us</h5>
+          <h5 data-i18n="footerContactus">Contact us</h5>
           <ul>
-            <li>8366, New Industrial Area, Riyadh 14334</li>
-            <li>phone: +966 11 265 1557</li>
-            <li>Sales: +966 53 348 1848 - 504410653</li>
-            <li>Email: info@fabtech.sa</li>
+            <li data-i18n="footerAdres">
+              Tihan Street, New Industrial City, Riyadh 14334
+            </li>
+            <li data-i18n="footerphone">phone: +966 11 265 1557</li>
+            <li data-i18n="footerSales">Sales: +966 53 348 1848 - 504410653</li>
+            <li>
+              <a
+                href="mailto:faris.husain@moldsfactory.com "
+                data-i18n="footerEmail"
+                >faris.husain@moldsfactory.com</a
+              >
+            </li>
           </ul>
         </div>
-        <div class="col-lg-4 mb-4">
-          <h5>Production</h5>
+        <div class="col-lg-4 mb-4 active">
+          <h5 data-i18n="footerProduction">Production</h5>
           <ul>
             <li>
-              <a href="../pages/machine.html">Technology</a>
+              <a href="../pages/molds.html" data-i18n="footerMolds">molds</a>
             </li>
             <li>
-              <a href="../pages/produst.html">Products</a>
+              <a href="../pages/produst.html" data-i18n="footerProducts"
+                >products</a
+              >
             </li>
             <li>
-              <a href="../pages/molds.html">Molds</a>
-            </li>
-            <li>
-              <a href="../pages/about.html">Our customers</a>
+              <a href="../pages/contact.html" data-i18n="footertechnology"
+                >Contact us</a
+              >
             </li>
           </ul>
         </div>
       </div>
       <div>
-        <p>©2025 Fabtech - All Rights Reserved</p>
+        <p data-i18n="footerCop">©2025 Fabtech - All Rights Reserved</p>
       </div>
     </footer>
     <!-- end-footer -->

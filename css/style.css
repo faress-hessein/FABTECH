@@ -66,13 +66,18 @@ a {
 .navbar .navbar-toggler:focus {
   box-shadow: none;
 }
-.navbar .arbic-foto,
-.navbar .english-foto {
+.navbar img.arbic-foto,
+.navbar img.english-foto {
   width: 30px;
   height: 20px;
   border-radius: 2px;
   display: block;
   cursor: pointer;
+}
+.navbar span.arbic-foto,
+.navbar span.english-foto {
+  cursor: pointer;
+  color: var(--main-color);
 }
 .navbar .FABTECH {
   height: 60px;
@@ -123,7 +128,6 @@ a {
   height: 100vh;
   position: relative;
   background-attachment: fixed;
-  width: 100%;
   object-fit: cover;
 }
 .landing::before {
@@ -363,6 +367,9 @@ a {
 .contact .box-txt i {
   color: var(--second-color);
 }
+.contact .box-txt a {
+  color: black;
+}
 /* end contact */
 
 /* start social */
@@ -412,16 +419,16 @@ footer a {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-footer a:hover {
+footer .active a:hover {
   color: var(--second-color);
   position: relative;
   padding-left: 10px;
 }
-footer a:hover::before {
+footer .active a:hover::before {
   display: block;
   transition: 0.6s;
 }
-footer li a::before {
+footer .active li a::before {
   transition: 0.6s;
   -webkit-transition: 0.6s;
   -moz-transition: 0.6s;
@@ -436,12 +443,16 @@ footer li a::before {
 
   display: none;
 }
-footer a:hover {
+footer .active a:hover {
   transform: translateX(10px);
   -webkit-transform: translateX(10px);
   -moz-transform: translateX(10px);
   -ms-transform: translateX(10px);
   -o-transform: translateX(10px);
+}
+footer .active li a {
+  color: #424242;
+  text-transform: capitalize;
 }
 footer li a {
   color: #424242;
@@ -558,6 +569,9 @@ footer p {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.time-line .carousel-indicators button {
+  background-color: var(--second-color);
 }
 /* .time-line .box.bottom::after {
   content: "";
@@ -698,12 +712,13 @@ footer p {
 }
 .machines h4 {
   margin-top: 10px;
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
   color: white;
   background-color: red;
   padding: 10px 0;
   margin-bottom: 0;
+  text-transform: uppercase;
 }
 /* end machines */
 
