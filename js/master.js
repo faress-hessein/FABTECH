@@ -206,7 +206,11 @@ const setLanguage = (language) => {
     document.dir = "rtl";
     languageEn.classList.remove("d-none");
     languageAr.classList.add("d-none");
-    cssRtl.href = "../lib/bootstrap/bootstrap.minrtl.css";
+    if (document.querySelector(".cssrtlDot")) {
+      cssRtl.href = "lib/bootstrap/bootstrap.minrtl.css";
+    } else {
+      cssRtl.href = "../lib/bootstrap/bootstrap.minrtl.css";
+    }
   } else {
     document.dir = "ltr";
     languageEn.classList.add("d-none");
