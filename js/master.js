@@ -6,8 +6,6 @@
 //   }
 // });
 
-import translations from "./translations.js";
-
 // get data from productus.json
 let productSection = document.querySelector(".product-section");
 if (productSection) {
@@ -23,6 +21,18 @@ if (productSection) {
   let listProduct = document.querySelector(".list-product");
   function addDataToHTML() {
     products.forEach((product) => {
+      if (product.id == 1) {
+        let h3 = document.createElement("h3");
+        h3.dataset.i18n = "productSectionCANS";
+        h3.innerText = `JERRY CANS`;
+        listProduct.appendChild(h3);
+      }
+      if (product.id == 8) {
+        let h3 = document.createElement("h3");
+        h3.dataset.i18n = "productSectionBOTTLES";
+        h3.innerText = `BOTTLES`;
+        listProduct.appendChild(h3);
+      }
       // create new elment item
       let newProduct = document.createElement("a");
       newProduct.href = "product-details.html?id=" + product.id;
@@ -124,7 +134,7 @@ if (productDetails) {
   }
 
   // handel btn box-info
-  let btns = document.querySelectorAll(".box-info a");
+  // let btns = document.querySelectorAll(".box-info a");
 
   // btns.forEach((btn) => {
   //   btn.addEventListener("click", () => {
@@ -157,6 +167,8 @@ const filltercards = (e) => {
 fillterBtnse.forEach((button) =>
   button.addEventListener("click", filltercards)
 );
+
+import translations from "./translations.js";
 
 // BTN language
 let languageAr = document.querySelector(".arbic-foto");
@@ -194,11 +206,7 @@ const setLanguage = (language) => {
     document.dir = "rtl";
     languageEn.classList.remove("d-none");
     languageAr.classList.add("d-none");
-    if (document.getElementsByClassName("cssrtlDot")) {
-      cssRtl.href = "/lib/bootstrap/bootstrap.minrtl.css";
-    } else {
-      cssRtl.href = "../lib/bootstrap/bootstrap.minrtl.css";
-    }
+    cssRtl.href = "../lib/bootstrap/bootstrap.minrtl.css";
   } else {
     document.dir = "ltr";
     languageEn.classList.add("d-none");

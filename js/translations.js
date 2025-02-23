@@ -109,6 +109,8 @@ const translations = {
     landingMoldsH1: "ABOUT PRODUCTS",
     landingMoldsP: "Professional Molds Manufacturer in Saudi Arabia",
     productSection: "products",
+    productSectionCANS: "JERRY CANS",
+    productSectionBOTTLES: "BOTTLES",
   },
   ar: {
     translationsArabic: "العربية",
@@ -218,6 +220,8 @@ const translations = {
     landingMoldsH1: "حول المنتجات",
     landingMoldsP: "صانع قوالب احترافي في المملكة العربية السعودية",
     productSection: "المنتجات",
+    productSectionCANS: "جراكن",
+    productSectionBOTTLES: "عبوات",
   },
 };
 export default translations;
