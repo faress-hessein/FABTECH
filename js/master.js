@@ -10,6 +10,9 @@
 let productSection = document.querySelector(".product-section");
 if (productSection) {
   let products = null;
+  // localStorage.getItem("lang") === "ar"
+  //   ? fetch("../js/productsAr.json")
+  //   : fetch("../js/products.json")
   fetch("../js/products.json")
     .then((response) => response.json())
     .then((data) => {
@@ -24,13 +27,17 @@ if (productSection) {
       if (product.id == 1) {
         let h3 = document.createElement("h3");
         h3.dataset.i18n = "productSectionCANS";
-        h3.innerText = `JERRY CANS`;
+        localStorage.getItem("lang") === "ar"
+          ? (h3.innerText = `جراكن`)
+          : (h3.innerText = `JERRY CANS`);
         listProduct.appendChild(h3);
       }
       if (product.id == 8) {
         let h3 = document.createElement("h3");
         h3.dataset.i18n = "productSectionBOTTLES";
-        h3.innerText = `BOTTLES`;
+        localStorage.getItem("lang") === "ar"
+          ? (h3.innerText = `عبوات`)
+          : (h3.innerText = `BOTTLES`);
         listProduct.appendChild(h3);
       }
       // create new elment item
