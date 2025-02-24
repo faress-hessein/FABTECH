@@ -782,8 +782,18 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   padding: 5px 10px;
+}
+.molds .box .text-info a {
+  display: block;
+  background-color: red;
+  width: fit-content;
+  margin: 10px auto;
+  color: white;
+  padding: 7px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
 }
 .molds .box .text-info div:not(:last-child) {
   border-bottom: 1px solid black;
@@ -994,6 +1004,7 @@ footer p {
   top: -5px;
   white-space: nowrap;
 }
+.product-details .شفاف,
 .product-details .transparent {
   position: relative;
   display: inline-block;
@@ -1003,6 +1014,7 @@ footer p {
   border: 1px solid black;
   background-color: #d3cbcb;
 }
+.product-details .أسود,
 .product-details .black {
   position: relative;
   display: inline-block;
@@ -1012,6 +1024,7 @@ footer p {
   border: 1px solid black;
   background-color: black;
 }
+.product-details .أصفر,
 .product-details .yellow {
   position: relative;
   display: inline-block;
@@ -1021,6 +1034,7 @@ footer p {
   border: 1px solid black;
   background-color: yellow;
 }
+.product-details .أحمر,
 .product-details .red {
   position: relative;
   display: inline-block;
@@ -1030,6 +1044,7 @@ footer p {
   border: 1px solid black;
   background-color: red;
 }
+.product-details .أبيض,
 .product-details .white {
   position: relative;
   display: inline-block;
@@ -1048,7 +1063,10 @@ footer p {
   border: 1px solid black;
   background-color: green;
 }
+
+.product-details .أزرق.فاتح,
 .product-details .light.blue,
+.product-details .كلور.أبيض,
 .product-details .bluish.white {
   position: relative;
   display: inline-block;

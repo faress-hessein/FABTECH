@@ -122,10 +122,10 @@
             <h1></h1>
             <div class="row txt-info">
               <div class="col-6 bottle-colors">
-                <h5>Avalible colors:</h5>
+                <h5 data-i18n="productDetH5colors">Avalible colors:</h5>
               </div>
               <div class="col-6 caps-colors">
-                <h5>caps colors:</h5>
+                <h5 data-i18n="productDetH5caps">caps colors:</h5>
               </div>
             </div>
           </div>
@@ -141,27 +141,39 @@
                         href="#detiles-info"
                         class="active"
                         data-name="specification"
+                        data-i18n="productDetAProductSpe"
                         >Product Specification</a
                       >
                     </li>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <li>
-                      <a href="#detiles-info" data-name="information"
+                      <a
+                        href="#detiles-info"
+                        data-name="information"
+                        data-i18n="productDetAPackagingInform"
                         >Packaging Information</a
                       >
                     </li>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <li>
-                      <a href="#detiles-info" data-name="downloads"
+                      <a
+                        href="#detiles-info"
+                        data-name="downloads"
+                        data-i18n="productDetADownloads"
                         >Downloads</a
                       >
                     </li>
                   </div>
                   <div class="col-sm-6 col-md-3">
                     <li>
-                      <a href="#detiles-info" data-name="printing">Printing</a>
+                      <a
+                        href="#detiles-info"
+                        data-name="printing"
+                        data-i18n="productDetAPrinting"
+                        >Printing</a
+                      >
                     </li>
                   </div>
                 </div>
@@ -175,41 +187,43 @@
                       class="box border border-black p-0"
                       data-name="specification"
                     >
-                      <h6>Product Specification</h6>
+                      <h6 data-i18n="productDetAProductSpe">
+                        Product Specification
+                      </h6>
                       <div>
-                        <p>Capacity</p>
+                        <p data-i18n="productDetPCapacity">Capacity</p>
                         <span class="capacity"></span>
                       </div>
                       <div>
-                        <p>Weight (grams)</p>
+                        <p data-i18n="productDetPWeight">Weight (grams)</p>
                         <span class="weight"></span>
                       </div>
                       <div>
-                        <p>Height (mm)</p>
+                        <p data-i18n="productDetPHeight">Height (mm)</p>
                         <span class="height"></span>
                       </div>
                       <div>
-                        <p>Length (mm)</p>
+                        <p data-i18n="productDetPLength">Length (mm)</p>
                         <span class="length"></span>
                       </div>
                       <div>
-                        <p>Width (mm)</p>
+                        <p data-i18n="productDetPWidth">Width (mm)</p>
                         <span class="width"></span>
                       </div>
                       <div>
-                        <p>Neck Size (mm)</p>
+                        <p data-i18n="productDetPNeck">Neck Size (mm)</p>
                         <span class="neck"></span>
                       </div>
                       <div>
-                        <p>Material</p>
+                        <p data-i18n="productDetPMaterial">Material</p>
                         <span class="material"></span>
                       </div>
                       <div>
-                        <p>Tamper Evident</p>
+                        <p data-i18n="productDetPTamper">Tamper Evident</p>
                         <span class="tamper"></span>
                       </div>
                       <div>
-                        <p>Recyclable</p>
+                        <p data-i18n="productDetPRecyclable">Recyclable</p>
                         <span class="recyclable"></span>
                       </div>
                     </div>
@@ -253,42 +267,57 @@
                     class="box hide border border-black p-0"
                     data-name="information"
                   >
-                    <h6>Standard pallet</h6>
+                    <h6 data-i18n="productDetStandPallet">Standard pallet</h6>
                     <div>
-                      <p>Approx. Height of Pallet (cm)</p>
+                      <p data-i18n="productDetheigPallet">
+                        Approx. Height of Pallet (cm)
+                      </p>
                       <span class="height-pallet"></span>
                     </div>
                     <div>
-                      <p>Approx. Length of Pallet (cm)</p>
+                      <p data-i18n="productDetLengPallet">
+                        Approx. Length of Pallet (cm)
+                      </p>
                       <span class="length-pallet"></span>
                     </div>
                     <div>
-                      <p>Approx. Width of Pallet (cm)</p>
+                      <p data-i18n="productDetWidtPallet">
+                        Approx. Width of Pallet (cm)
+                      </p>
                       <span class="width-pallet"></span>
                     </div>
                     <div>
-                      <p>Number of Layers Per Pallet</p>
+                      <p data-i18n="productDetLayerPallet">
+                        Number of Layers Per Pallet
+                      </p>
                       <span class="layers-pallet"></span>
                     </div>
                     <div>
-                      <p>Number of Units Per Layer</p>
+                      <p data-i18n="productDetUnitPallet">
+                        Number of Units Per Layer
+                      </p>
                       <span class="units-pallet"></span>
                     </div>
                     <div>
-                      <p>Total Number of Units</p>
+                      <p data-i18n="productDetNumUnit">Total Number of Units</p>
                       <span class="number-pallet"></span>
                     </div>
                   </div>
                 </div>
                 <div class="col-12 pt-4 pb-4">
-                  <div class="box hide" data-name="downloads">
+                  <div
+                    class="box hide me-auto"
+                    data-name="downloads"
+                    style="width: fit-content"
+                  >
                     <a href="" class="Download" download> </a>
                   </div>
-                  <div class="box hide text-black-50" data-name="printing">
-                    <h7
-                      >Printing Available for this Product, minimum quantities
-                      apply. Please contact us.
-                    </h7>
+                  <div
+                    class="box hide text-black-50 me-auto"
+                    data-name="printing"
+                    style="width: fit-content"
+                  >
+                    <h7 class="Printing"> </h7>
                   </div>
                 </div>
               </div>

@@ -6,14 +6,23 @@
 //   }
 // });
 
+// location.reload();
+
 // get data from productus.json
+
 let productSection = document.querySelector(".product-section");
 if (productSection) {
   let products = null;
   // localStorage.getItem("lang") === "ar"
   //   ? fetch("../js/productsAr.json")
   //   : fetch("../js/products.json")
-  fetch("../js/products.json")
+  // fetch("../js/products.json")
+  // console.log(localStorage.getItem("lang"));
+  fetch(
+    localStorage.getItem("lang") === "en"
+      ? "../js/products.json"
+      : "../js/productsAr.json"
+  )
     .then((response) => response.json())
     .then((data) => {
       products = data;
@@ -65,7 +74,11 @@ if (productSection) {
 let productDetails = document.querySelector(".product-details");
 if (productDetails) {
   let productsInf = null;
-  fetch("../js/products.json")
+  fetch(
+    localStorage.getItem("lang") === "en"
+      ? "../js/products.json"
+      : "../js/productsAr.json"
+  )
     .then((response) => response.json())
     .then((data) => {
       productsInf = data;
@@ -114,6 +127,7 @@ if (productDetails) {
     detail.querySelector(".Download").innerText = thisproduct.downloadtext;
     detail.querySelector(".Download").href =
       "../img/PRODUCTS/pdf/" + thisproduct.downloadHref;
+    detail.querySelector(".Printing").innerText = thisproduct.Printing;
 
     // cap color
     for (let i = 0; i < thisproduct.capColor.length; i++) {
@@ -193,6 +207,7 @@ let languageEn = document.querySelector(".english-foto");
 
 const languageSelector = document.querySelector(".language-selector");
 languageSelector.addEventListener("click", (event) => {
+  location.reload();
   setLanguage(event.target.dataset.lan);
   localStorage.setItem("lang", event.target.dataset.lan);
   // console.log(event.target.value);
