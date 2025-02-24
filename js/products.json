@@ -200,7 +200,7 @@
     "numberPallet": "1512",
     "downloadtext": "Download: 1L Data Sheet (PDF)",
     "downloadHref": "1L SQ Data sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 8,
@@ -229,7 +229,7 @@
     "numberPallet": "80",
     "downloadtext": "Download: 3.80L Data Sheet (PDF)",
     "downloadHref": "Download",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 9,
@@ -258,7 +258,7 @@
     "numberPallet": "539",
     "downloadtext": "Download: 3L Data Sheet (PDF)",
     "downloadHref": "3L DFC Data sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 10,
@@ -287,7 +287,7 @@
     "numberPallet": "756",
     "downloadtext": "Download: 2L Data Sheet (PDF)",
     "downloadHref": "2L Shampoo Data sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 11,
@@ -316,7 +316,7 @@
     "numberPallet": "770",
     "downloadtext": "Download: 2L Data Sheet (PDF)",
     "downloadHref": "2L Softener Data sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 12,
@@ -345,7 +345,7 @@
     "numberPallet": "1470",
     "downloadtext": "Download: 1L Data Sheet (PDF)",
     "downloadHref": "1L DWS Data sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 13,
@@ -374,7 +374,7 @@
     "numberPallet": "1944",
     "downloadtext": "Download: 30L Data Sheet (PDF)",
     "downloadHref": "1L SNTZR Data sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   },
   {
     "id": 14,
@@ -403,6 +403,6 @@
     "numberPallet": "2052",
     "downloadtext": "Download: 650ml Data Sheet (PDF)",
     "downloadHref": "650ml Spray Data Sheet.pdf",
-    "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
+    "Printing": "Printing Not Available for this Product."
   }
 ]

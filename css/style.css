@@ -1054,6 +1054,7 @@ footer p {
   border: 1px solid black;
   background-color: white;
 }
+.product-details .أخضر,
 .product-details .green {
   position: relative;
   display: inline-block;
@@ -1076,6 +1077,7 @@ footer p {
   border: 1px solid black;
   background-color: #a9d5e9;
 }
+.product-details .أزرق,
 .product-details .blue {
   position: relative;
   display: inline-block;
@@ -1085,6 +1087,7 @@ footer p {
   border: 1px solid black;
   background-color: #3f66d2;
 }
+.product-details .وردي,
 .product-details .pink {
   position: relative;
   display: inline-block;
