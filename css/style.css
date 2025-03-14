@@ -121,12 +121,21 @@ a {
 
 /* start landing */
 .landing {
-  background-image: url(../img/background-3.jpg);
+  background-image: url(../img/background-larg.jpg);
+  position: relative;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
-  position: relative;
+  background-attachment: fixed;
+  object-fit: cover;
+}
+.landing img {
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
   background-attachment: fixed;
   object-fit: cover;
 }
@@ -169,6 +178,11 @@ a {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+}
+@media (max-width: 600px) {
+  .landing {
+    background-image: url(../img/background-small.jpg);
+  }
 }
 /* end landing */
 
