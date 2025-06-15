@@ -110,10 +110,10 @@ if (productDetails) {
     detail.querySelector(".recyclable").innerText = thisproduct.recyclable;
     detail.querySelector(".imd-Product-one").src =
       "../img/PRODUCTS/detiles/" + thisproduct.imgProductOne;
-    detail.querySelector(".imd-Product-tow").src =
-      "../img/PRODUCTS/detiles/" + thisproduct.imgProductTow;
-    detail.querySelector(".imd-Product-three").src =
-      "../img/PRODUCTS/detiles/" + thisproduct.imgProductThree;
+    // detail.querySelector(".imd-Product-tow").src =
+    //   "../img/PRODUCTS/detiles/" + thisproduct.imgProductTow;
+    // detail.querySelector(".imd-Product-three").src =
+    //   "../img/PRODUCTS/detiles/" + thisproduct.imgProductThree;
     thisproduct.recyclable;
     detail.querySelector(".Packaging").src =
       "../img/PRODUCTS/detiles/" + thisproduct.imgProductPackaging;

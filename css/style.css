@@ -121,7 +121,7 @@ a {
 
 /* start landing */
 .landing {
-  background-image: url(../img/background-larg.jpg);
+  background-image: url(../img/background.jpg);
   position: relative;
   background-position: center;
   background-size: cover;
@@ -179,11 +179,11 @@ a {
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
 }
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .landing {
     background-image: url(../img/background-small.jpg);
   }
-}
+} */
 /* end landing */
 
 /* start module */
@@ -234,7 +234,6 @@ a {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
-  cursor: pointer;
 }
 .about .text h3 {
   font-weight: 700;
@@ -250,6 +249,13 @@ a {
   -o-transform: translate(-50%, -50%);
   font-size: 50px;
   color: var(--second-color);
+}
+.about .img-box {
+  background-image: url(../img/about.jpg);
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
 }
 .about .box:hover {
   background-color: var(--second-color) !important;
@@ -732,7 +738,7 @@ footer p {
 /* start landing-molds */
 .landing-molds {
   height: 100vh;
-  background-image: url(../img/molds/landing-molds.jpg);
+  background-image: url(../img/products.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -999,6 +1005,11 @@ footer p {
   justify-content: space-between;
   margin-bottom: 5px;
   padding: 0 10px;
+}
+.product-details .detiles-info .box-info div:not(:last-of-type),
+.product-details .detiles-info .box div:not(:last-of-type) {
+  border-bottom: 1px solid gray;
+  /* Jerry Can 20L outer */
 }
 .product-details .detiles-info .box p {
   margin: 0;

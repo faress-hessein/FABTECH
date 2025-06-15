@@ -87,7 +87,7 @@
     "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
   },
   {
-    "id": 4,
+    "id": 5,
     "imge": "Jerry_Can_20L_R.png",
     "name": "Jerry Can 20L Round",
     "capColor": ["red", "white"],
@@ -116,7 +116,7 @@
     "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
   },
   {
-    "id": 5,
+    "id": 6,
     "imge": "Jerry Can 5L.png",
     "name": "Jerry Can 5L",
     "capColor": ["white", "green", "black", "yellow", "red"],
@@ -145,7 +145,7 @@
     "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
   },
   {
-    "id": 6,
+    "id": 7,
     "imge": "Jerry_Can_4L.png",
     "name": "Jerry Can 4L",
     "capColor": ["white", "green", "black", "yellow", "red"],
@@ -174,7 +174,7 @@
     "Printing": "Printing Available for this Product, minimum quantities apply. Please contact us."
   },
   {
-    "id": 7,
+    "id": 8,
     "imge": "Jerry Can 1L.png",
     "name": "Jerry Can 1L",
     "capColor": ["white"],
@@ -203,7 +203,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 8,
+    "id": 9,
     "imge": "Clorox_3.80L.png",
     "name": "Clorox 3.80L",
     "capColor": ["bluish white", "white"],
@@ -217,10 +217,10 @@
     "material": "HDPE",
     "tamper": "Yes",
     "recyclable": "Yes",
-    "imgProductOne": "soon.png",
-    "imgProductTow": "soon.png",
-    "imgProductThree": "soon.png",
-    "imgProductPackaging": "soon.png",
+    "imgProductOne": "3.78L-1.png",
+    "imgProductTow": "3.78L-2.png",
+    "imgProductThree": "3.78L-3.png",
+    "imgProductPackaging": "3.78L-4.png",
     "heightPallet": "220",
     "lengthPallet": "133",
     "widthPallet": "108",
@@ -232,7 +232,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 9,
+    "id": 10,
     "imge": "Floor Disinfectant 3L.png",
     "name": "Floor Disinfectant 3L",
     "capColor": ["white", "blue"],
@@ -261,7 +261,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 10,
+    "id": 11,
     "imge": "Fabric_Conditioner_2L.png",
     "name": "Fabric Conditioner 2L",
     "capColor": ["transparent", "blue", "black", "light blue", "pink"],
@@ -290,7 +290,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 11,
+    "id": 12,
     "imge": "Fabric Softener 2L.png",
     "name": "Fabric Softener 2L",
     "capColor": ["transparent", "blue", "black", "light blue", "pink"],
@@ -319,7 +319,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 12,
+    "id": 13,
     "imge": "Dish_Wash_1L.png",
     "name": "Dish Wash 1L",
     "capColor": ["white", "red"],
@@ -348,7 +348,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 13,
+    "id": 14,
     "imge": "Sanitizer Bottle 1L.png",
     "name": "Sanitizer Bottle 1L",
     "capColor": [],
@@ -377,7 +377,7 @@
     "Printing": "Printing Not Available for this Product."
   },
   {
-    "id": 14,
+    "id": 15,
     "imge": "Spray Bottle 650 ml.png",
     "name": "Spray Bottle 650ml",
     "capColor": [],
