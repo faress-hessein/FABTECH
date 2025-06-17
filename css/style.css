@@ -987,7 +987,7 @@ footer p {
   padding-top: 100px;
 }
 .product-details .row img {
-  height: 200px;
+  height: 250px;
   margin: auto;
   width: fit-content;
   display: block;
@@ -1189,7 +1189,7 @@ footer p {
 }
 @media (max-width: 568px) {
   .product-details .row img {
-    width: 175px;
+    height: 200px;
   }
 }
 /* end product-details */
