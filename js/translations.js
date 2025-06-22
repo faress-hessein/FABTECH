@@ -13,7 +13,7 @@ const translations = {
     home: "HOME",
     about: "ABOUT US",
     machines: "Our projects",
-    molds: "Engineering Department",
+    molds: "Engineering",
     contact: "CONTACT US",
     products: "PRODUCTS",
     landingh1Fabtech: "FABTECH Plastic",
@@ -32,11 +32,11 @@ const translations = {
     aboutp:
       "FABTECH Factory Established in 1978, as a Professional Plastic & Molds Manufacturer in Saudi Arabia. We Design, Develop & Manufacture high-Quality Molds & Plastic Products, Also offering Maintenance & services related to our Products & Customer Products.",
     aboutbtn: "About Us",
-    producth2: "Our Service",
-    productbox1: "Engineering Department",
-    productbox2: "products",
-    productbox3: "Operation",
-    productbox4: "Rubbers",
+    producth2: "Our products",
+    productbox1: "Jerry Can 30L",
+    productbox2: "Jerry Can 20L",
+    productbox3: "Shampoo 2L",
+    productbox4: "Clorox 3.80L",
     productbox5: "Injection",
     productbox6: "Molds",
     productbox7: "PVC Pipes",
@@ -70,7 +70,7 @@ const translations = {
     footerCop: "©2025 Fabtech - All Rights Reserved",
     landAboutH1: "ABOUT FABTECH",
     landAboutP: "Professional Plastic & Molds Manufacturer in Saudi Arabia",
-    WelcomeH2: "Welcome",
+    WelcomeH2: "INTRODUCTION",
     WelcomeP:
       "FABTECH Factory Established in 1978, as a Professional Plastic & Molds Manufacturer in Saudi Arabia. We Design, Develop & Manufacture high-Quality Molds & Plastic Products, Also offering Maintenance & services related to our Products & Customer Products.",
     timePone: "Plastic Molds & Fabrication Spare Parts",
@@ -82,7 +82,7 @@ const translations = {
     timepfive:
       "Plastic Molds, Spare Parts, Evaporative Cooler Pumps & Air suction devices. and motor for desert Coolers.",
     timeSpanfive: "2013 To present",
-    landingAboutH1: "ABOUT MACHINES",
+    landingAboutH1: "projects",
     landingAboutP: "Professional & Molds Manufacturer in Saudi Arabia",
     aboutMachnH2: "How we do it",
     aboutMachnP:
@@ -133,6 +133,16 @@ const translations = {
     productDetLayerPallet: "Number of Layers Per Pallet",
     productDetUnitPallet: "Number of Units Per Layer",
     productDetNumUnit: "Total Number of Units",
+    orgH2: "organization chart",
+    visionH5: "vision",
+    visionP:
+      "To provide our customers with a fulfilling solution in mold design and fabrication to consistently suit their plastic product requirements",
+    missionH5: "Mission",
+    missionP:
+      "To be the most advanced manufacturer of plastic and molds in the Middle East, ensuring the highest quality at the most competitive prices",
+    newH3: "Our news",
+    newP: "By 2026, FABTECH Factory will start producing jerrycans 25 liter, This strategic expansion supports accelerated growth.",
+    customerH3: "Our customers",
   },
   ar: {
     translationsArabic: "العربية",
@@ -147,7 +157,7 @@ const translations = {
     home: "الصفحة الرئيسية",
     about: "من نحن",
     machines: "مشاريعنا",
-    molds: "القسم الهندسي",
+    molds: "الهندسي",
     products: "المنتجات",
     contact: "تواصل معنا",
     landingh1Fabtech: "فابتك للبلاستيك",
@@ -165,11 +175,11 @@ const translations = {
     aboutp:
       "مصنع فايتك تأسس عام 1978، كشركة متخصصة في تصنيع البلاستيك والقوالب في المملكة العربية السعودية. نقوم بتصميم وتطوير وتصنيع قوالب ومنتجات بلاستيكية عالية الجودة، كما نقدم خدمات الصيانة والخدمات المتعلقة بمنتجاتنا ومنتجات العملاء.",
     aboutbtn: "معلومات عنا",
-    producth2: "خدماتنا",
-    productbox1: "القسم الهندسي",
-    productbox2: "منتجاتنا",
-    productbox3: "التشغيل",
-    productbox4: "ربلات",
+    producth2: "منتجاتنا",
+    productbox1: "جركن 30 لتر",
+    productbox2: "جركن 20 لتر",
+    productbox3: "شامبو 2 لتر",
+    productbox4: "كلورسك 3.80 لتر",
     productbox5: "حقن",
     productbox6: "قوالب",
     productbox7: "PVC",
@@ -203,7 +213,7 @@ const translations = {
     landAboutH1: "نبذة عن فابتك",
     landAboutP:
       "الشركة المصنعة للبلاستيك والقوالب الاحترافية في المملكة العربية السعودية",
-    WelcomeH2: "مرحبا",
+    WelcomeH2: "المقدمة",
     WelcomeP:
       "مصنع فابتك تأسس عام 1978م كشركة متخصصة في تصنيع البلاستيك والقوالب في المملكة العربية السعودية. نقوم بتصميم وتطوير وتصنيع قوالب ومنتجات بلاستيكية عالية الجودة، كما نقدم خدمات الصيانة والخدمات المتعلقة بمنتجاتنا ومنتجات العملاء.",
     timePone: "قوالب البلاستيك وقطع الغيار للتصنيع",
@@ -215,7 +225,7 @@ const translations = {
     timepfive:
       "قوالب بلاستيكية وقطع غيار ومضخات تبريد تبخيري وأجهزة شفط هواء ومحرك لمبردات الصحراء.",
     timeSpanfive: "2013 حتا الأن",
-    landingAboutH1: "حول الآلات",
+    landingAboutH1: "مشاريعنا",
     landingAboutP: "شركة متخصصة في تصنيع القوالب في المملكة العربية السعودية",
     aboutMachnH2: "كيف نفعل ذلك",
     aboutMachnP:
@@ -266,6 +276,16 @@ const translations = {
     productDetLayerPallet: "عدد الطبقات لكل طبيلية نقالة",
     productDetUnitPallet: "عدد الوحدات لكل طبقة",
     productDetNumUnit: "العدد الإجمالي للوحدات",
+    orgH2: "المخطط التنظيمي",
+    visionH5: "الرؤية",
+    visionP:
+      "لتزويد عملائنا بحل مُرضٍ في تصميم وتصنيع القوالب لتناسب متطلبات منتجاتهم البلاستيكية باستمرار",
+    missionH5: "الرسالة",
+    missionP:
+      "أن نكون الشركة الأكثر تقدمًا في تصنيع البلاستيك والقوالب في الشرق الأوسط، مع ضمان أعلى جودة بأكثر الأسعار تنافسية",
+    newH3: "أخبارنا",
+    newP: "بحلول عام 2026، سيبدأ مصنع فابتك في إنتاج عبوات بلاستيكية سعة 25 لترًا، ويدعم هذا التوسع الاستراتيجي النمو المتسارع",
+    customerH3: "عملائنا",
   },
 };
 export default translations;

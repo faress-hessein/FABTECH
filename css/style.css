@@ -46,22 +46,30 @@ a {
 .special-btn-t:hover {
   opacity: 0.7;
 }
+.special-heding {
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 800;
+  font-size: 30px;
+  color: #333333f2;
+  letter-spacing: 1px;
+}
 /* end Global */
 
 /* start nav */
 .navbar {
-  position: absolute;
+  position: fixed;
   width: 100%;
   z-index: 100;
-  border-bottom: 1px solid white;
-  background-color: transparent;
+  box-shadow: 0 2px 15px #00000075;
+  background-color: white;
 }
 .navbar ul {
   margin: 0;
 }
 .navbar button.navbar-toggler {
-  color: var(--main-color) !important;
-  border: 2px solid var(--main-color);
+  color: black !important;
+  border: 2px solid black;
 }
 .navbar .navbar-toggler:focus {
   box-shadow: none;
@@ -85,7 +93,7 @@ a {
 .navbar ul a {
   text-decoration: none;
   text-transform: uppercase;
-  color: var(--main-color);
+  color: black;
   font-weight: 500;
   font-size: 15px;
 }
@@ -103,6 +111,9 @@ a {
 .navbar ul li {
   list-style: none;
 }
+.navbar ul li .active {
+  color: var(--second-color);
+}
 @media (max-width: 992px) {
   .navbar ul li:not(:last-of-type) {
     padding-bottom: 10px;
@@ -117,11 +128,22 @@ a {
   padding: 5px 8px;
   border-radius: 10px;
 }
+.navbar ul span {
+  color: black;
+}
+.navbar ul span:hover {
+  color: var(--second-color);
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
 /* end nav */
 
 /* start landing */
 .landing {
-  background-image: url(../img/background.jpg);
+  background-image: url(../img/Picture23.png);
   position: relative;
   background-position: center;
   background-size: cover;
@@ -144,7 +166,7 @@ a {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #00000047;
+  background-color: #00000012;
 }
 .landing .lnd-text {
   position: absolute;
@@ -302,7 +324,7 @@ a {
   width: 100%;
   left: 0;
   top: 0;
-  background-color: #00000052;
+  /* background-color: #00000052; */
 }
 .product .box img {
   height: 200px;
@@ -333,7 +355,7 @@ a {
   position: relative;
 }
 .portflio img {
-  height: 500px;
+  height: 100px;
 }
 .portflio h5 {
   font-size: 30px !important;
@@ -344,7 +366,6 @@ a {
   /* color: white !important; */
 }
 .portflio button {
-  background-color: red !important;
 }
 /* end portflio */
 
@@ -361,6 +382,57 @@ a {
   height: 300px;
 }
 /* end certificates */
+
+/* start news */
+.news .box.img {
+  overflow: hidden;
+  box-shadow: 0px 6px 61px 6px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  background-color: #f6f6f6;
+}
+.news .box.img:hover {
+  background-color: var(--second-color) !important;
+  transform: translateY(-20px);
+}
+.news img {
+  border-radius: 10px;
+}
+.news p {
+  font-size: 25px;
+}
+.news h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* end news */
+
+/* start customers */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  height: 100px;
+  object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  padding: 30px;
+}
+/* end customers */
 
 /* start contact */
 .contact iframe {
@@ -481,11 +553,14 @@ footer p {
 
 /* start landing-about */
 .landing-about {
-  height: 100vh;
+  height: 70vh;
   position: relative;
+  background-image: url(../img/background.jpg);
   display: flex;
   align-items: center;
   justify-content: center;
+  background-position: center;
+  background-size: cover;
 }
 .landing-about .video {
   position: absolute;
@@ -512,6 +587,7 @@ footer p {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  min-height: 250px;
 }
 /* end welcome */
 
@@ -662,10 +738,37 @@ footer p {
 }
 /* end time-line */
 
+/* start vision */
+.vision {
+}
+.vision .box {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid red;
+  border-radius: 20px;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+.vision .box:hover {
+  background-color: red;
+}
+.vision .box h5 {
+  text-transform: capitalize;
+}
+.vision .box p {
+  padding: 0 30px;
+  letter-spacing: 0.4px;
+  color: #000000a6;
+}
+/* end vision */
+
 /* start landing-machines */
 .landing-machines {
-  height: 100vh;
-  background-image: url(../img/MACHINES/machines-background-2.jpg);
+  height: 70vh;
+  background-image: url(../img/home-project.jpg);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -681,8 +784,10 @@ footer p {
   background-color: #00000047;
 }
 .landing-machines .lnd-text {
-  color: var(--main-color);
+  width: 100%;
+  background-color: #ff000061;
   z-index: 1;
+  color: var(--main-color);
 }
 /* end landing-machines */
 
