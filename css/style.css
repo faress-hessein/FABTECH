@@ -8,7 +8,8 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: sans-serif;
+  font-family: "Tajawal", sans-serif;
+  font-style: normal;
   background-color: #f2f2f2;
 }
 li {
@@ -1102,6 +1103,20 @@ footer p {
 /* end product-section */
 
 /* start product-details */
+.product-details p {
+  font-size: 15px;
+}
+.product-details .box.Description ul {
+  margin: 0 !important;
+  padding-left: 25px !important;
+}
+.product-details .box.Description ul li {
+  font-size: 15px;
+  list-style: disc !important;
+  display: list-item !important;
+}
+.product-details h5 {
+}
 .product-details {
   padding-top: 100px;
 }
@@ -1282,7 +1297,7 @@ footer p {
   padding: 20px;
   margin-bottom: 32px;
   border-top: 0;
-  height: 350px;
+  height: 400px;
 }
 .detiles-info .box.hide {
   display: none !important;
@@ -1309,6 +1324,9 @@ footer p {
 @media (max-width: 568px) {
   .product-details .row img {
     height: 200px;
+  }
+  .product-details .detiles-info .box {
+    text-align: start;
   }
 }
 /* end product-details */
@@ -1342,7 +1360,11 @@ footer p {
 .landing-contact .lnd-text h1 {
   text-transform: uppercase;
 }
-.landing-text {
+.body {
+  background-color: white;
+}
+footer {
+  background-color: #f2f2f2;
 }
 /* end landing-contact*/
 

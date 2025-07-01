@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
       rel="stylesheet"
     />
     <!-- main-bootstrap -->
@@ -144,13 +144,24 @@
             <ul class="fillter-btn">
               <div class="container">
                 <div class="row">
+                  <div class="col-sm-6 col-md-2">
+                    <li>
+                      <a
+                        href="#detiles-info"
+                        data-name="Description"
+                        data-i18n="productDetADescription"
+                        class="active"
+                        >Description</a
+                      >
+                    </li>
+                  </div>
                   <div class="col-sm-6 col-md-3">
                     <li>
                       <a
                         href="#detiles-info"
-                        class="active"
                         data-name="specification"
                         data-i18n="productDetAProductSpe"
+                        class=""
                         >Product Specification</a
                       >
                     </li>
@@ -161,26 +172,29 @@
                         href="#detiles-info"
                         data-name="information"
                         data-i18n="productDetAPackagingInform"
+                        class=""
                         >Packaging Information</a
                       >
                     </li>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-sm-6 col-md-2">
                     <li>
                       <a
                         href="#detiles-info"
                         data-name="downloads"
                         data-i18n="productDetADownloads"
+                        class=""
                         >Downloads</a
                       >
                     </li>
                   </div>
-                  <div class="col-sm-6 col-md-3">
+                  <div class="col-sm-6 col-md-2">
                     <li>
                       <a
                         href="#detiles-info"
                         data-name="printing"
                         data-i18n="productDetAPrinting"
+                        class=""
                         >Printing</a
                       >
                     </li>
@@ -190,10 +204,29 @@
             </ul>
             <div class="detiles-info" id="#detiles-info">
               <div class="row align-items-center">
+                <div class="col-12">
+                  <div class="box Description" data-name="Description">
+                    <p class="DesP">faress</p>
+                    <h5 class="mt-4">Features:</h5>
+                    <ul>
+                      <li class="DesLi1"></li>
+                      <li class="DesLi2"></li>
+                      <li class="DesLi3"></li>
+                      <li class="DesLi4"></li>
+                      <li class="DesLi5"></li>
+                    </ul>
+                    <h5 class="mt-4">Applications:</h5>
+                    <ul>
+                      <li class="DesLi6"></li>
+                      <li class="DesLi7"></li>
+                      <li class="DesLi8"></li>
+                    </ul>
+                  </div>
+                </div>
                 <div class="col-md-6 mb-4">
                   <div class="boxs">
                     <div
-                      class="box box-info border border-black p-0"
+                      class="box box-info border border-black p-0 hide"
                       data-name="specification"
                     >
                       <h6 data-i18n="productDetAProductSpe">
@@ -248,7 +281,7 @@
                 </div>
                 <div class="boxs col-md-6">
                   <div
-                    class="box d-flex align-items-center"
+                    class="box d-flex align-items-center hide"
                     data-name="specification"
                   >
                     <img
@@ -313,21 +346,19 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-12 pt-4 pb-4">
-                  <div
-                    class="box hide me-auto"
-                    data-name="downloads"
-                    style="width: fit-content"
-                  >
-                    <a href="" class="Download" download> </a>
-                  </div>
-                  <div
-                    class="box hide text-black-50 me-auto"
-                    data-name="printing"
-                    style="width: fit-content"
-                  >
-                    <h7 class="Printing"> </h7>
-                  </div>
+                <div
+                  class="col-12 pt-4 pb-4 box hide me-auto"
+                  data-name="downloads"
+                  style="width: fit-content"
+                >
+                  <a href="" class="Download" download> </a>
+                </div>
+                <div
+                  class="box hide text-black-50 me-auto"
+                  data-name="printing"
+                  style="width: fit-content"
+                >
+                  <h7 class="Printing"> </h7>
                 </div>
               </div>
               <!-- <span> <a href="#">Lorem</a></span> -->

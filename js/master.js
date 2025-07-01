@@ -99,6 +99,15 @@ if (productDetails) {
     detail.querySelector("h1").innerText = thisproduct.name;
     detail.querySelector(".img-main").src =
       "../img/PRODUCTS/" + thisproduct.imge;
+    detail.querySelector(".DesP").innerText = thisproduct.DesP;
+    detail.querySelector(".DesLi1").innerText = thisproduct.DesLi1;
+    detail.querySelector(".DesLi2").innerText = thisproduct.DesLi2;
+    detail.querySelector(".DesLi3").innerText = thisproduct.DesLi3;
+    detail.querySelector(".DesLi4").innerText = thisproduct.DesLi4;
+    detail.querySelector(".DesLi5").innerText = thisproduct.DesLi5;
+    detail.querySelector(".DesLi6").innerText = thisproduct.DesLi6;
+    detail.querySelector(".DesLi7").innerText = thisproduct.DesLi7;
+    detail.querySelector(".DesLi8").innerText = thisproduct.DesLi8;
     detail.querySelector(".capacity").innerText = thisproduct.capacity;
     detail.querySelector(".weight").innerText = thisproduct.weight;
     detail.querySelector(".height").innerText = thisproduct.height;
@@ -174,6 +183,7 @@ let fillterBoxse = document.querySelectorAll(".detiles-info .box");
 
 const filltercards = (e) => {
   document.querySelector(".active").classList.remove("active");
+  document.querySelector(".fillter-btn a").classList.remove("active");
   e.target.classList.add("active");
   // handel ti add class hide
   fillterBoxse.forEach((card) => {
@@ -241,12 +251,21 @@ const setLanguage = (language) => {
   }
 };
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 2,
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+// swiper
+let swiperPage = document.querySelector(".swiper");
+if (swiperPage) {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+}
+
+// let productDetails = document.querySelector(".product-details")
+if (productDetails) {
+  document.querySelector("body").classList.add("body");
+}
