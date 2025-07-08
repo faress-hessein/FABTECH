@@ -71,9 +71,10 @@ const translations = {
     landAboutH1: "ABOUT FABTECH",
     landAboutP: "Professional Plastic & Molds Manufacturer in Saudi Arabia",
     WelcomeH2: "INTRODUCTION",
-    WelcomeP:
-      "FABTECH Factory Established in 1978, as a Professional Plastic & Molds Manufacturer in Saudi Arabia. We Design, Develop & Manufacture high-Quality Molds & Plastic Products, Also offering Maintenance & services related to our Products & Customer Products.",
-    timePone: "Plastic Molds & Fabrication Spare Parts",
+    WelcomeFab: "FABTECH",
+    WelcomeP1:
+      '<span data-i18n="WelcomeFab"></span>  Factory was Established in 1978 in Riyadh, Saudi Arabia , It Is Part Of A Group Of Affiliated Companies Under Common Ownership, Collectively Driven By Shared Leadership And Long-term Strategic Goals.',
+    timePone: " Plastic Molds & Fabrication Spare Parts",
     timePtow: "Plastic Molds, Spare Parts & Evaporative Cooler Pumps",
     timePthree:
       "Plastic Molds, Fabricatior Spare Parts, Evaporative Cooler Pump & Air suction device.",
@@ -83,7 +84,7 @@ const translations = {
       "Plastic Molds, Spare Parts, Evaporative Cooler Pumps & Air suction devices. and motor for desert Coolers.",
     timeSpanfive: "2013 To present",
     landingAboutH1: "projects",
-    landingAboutP: "Professional & Molds Manufacturer in Saudi Arabia",
+    landingAboutP: "",
     aboutMachnH2: "How we do it",
     aboutMachnP:
       "FABTECH Carries Decades of Experience in the mold fabrication and our manufacturing experiences makes us aware of the different requirements from our various list of customers. From technical requests to the optimizing product design, from productivity effect to the mold cost . All these make us State-of-art fabri- cation in Saudi Arabia.",
@@ -116,6 +117,8 @@ const translations = {
     productDetADescription: "Description",
     productDetAProductSpe: "Product Specification",
     productDetAPackagingInform: "Packaging Information",
+    downloadimge1: "30L Outer Data sheet.jpg",
+    downloadimge2: "qr.png",
     productDetADownloads: "Downloads",
     productDetAPrinting: "Printing",
     productDetPCapacity: "Capacity",
@@ -127,6 +130,7 @@ const translations = {
     productDetPMaterial: "Material",
     productDetPTamper: "Tamper Evident",
     productDetPRecyclable: "Recyclable",
+    PackagingType: "Packaging Type",
     productDetStandPallet: "Standard pallet",
     productDetheigPallet: "Approx. Height of Pallet (cm)",
     productDetLengPallet: "Approx. Length of Pallet (cm)",
@@ -216,7 +220,7 @@ const translations = {
       "الشركة المصنعة للبلاستيك والقوالب الاحترافية في المملكة العربية السعودية",
     WelcomeH2: "المقدمة",
     WelcomeP:
-      "مصنع فابتك تأسس عام 1978م كشركة متخصصة في تصنيع البلاستيك والقوالب في المملكة العربية السعودية. نقوم بتصميم وتطوير وتصنيع قوالب ومنتجات بلاستيكية عالية الجودة، كما نقدم خدمات الصيانة والخدمات المتعلقة بمنتجاتنا ومنتجات العملاء.",
+      "تأسس مصنع فابتك عام ١٩٧٨ في الرياض، المملكة العربية السعودية، وهو جزء من مجموعة شركات تابعة ذات ملكية مشتركة، مدفوعةً بقيادة مشتركة وأهداف استراتيجية طويلة المدى. فابتك  شركة رائدة في تصنيع المنتجات البلاستيكية عالية الجودة والقوالب الدقيقة. يلتزم المصنع بتقديم أداء متميز وتصاميم مبتكرة وأعلى معايير السلامة لمستخدميه وكوادره العاملة. بالإضافة إلى التصميم والتصنيع، يقدم فابتك  خدمات صيانة ودعم شاملة لمنتجاته ومعداته المملوكة للعملاء. انطلاقًا من ثقافة الابتكار، يستثمر فابتك  باستمرار في تقنيات الإنتاج الآلي المتقدمة لتحقيق أقصى قدر من الكفاءة والحفاظ على ميزة تنافسية قوية. يولي المصنع أهمية كبيرة لتطوير منتجات جديدة ويحمي ملكيته الفكرية بقوة من خلال براءات الاختراع والعلامات التجارية وحقوق النشر واتفاقيات السرية الصارمة مع موظفيه وشركائه. مع التركيز على العملاء بنهجها الملتزم بالتميز، تواصل شركة فابتك توسيع قدراتها لتلبية الاحتياجات المتطورة للأسواق المحلية والدولية.",
     timePone: "قوالب البلاستيك وقطع الغيار للتصنيع",
     timePtow: "قوالب بلاستيكية وقطع غيار ومضخات تبريد تبخيرية",
     timePthree:
@@ -271,6 +275,7 @@ const translations = {
     productDetPMaterial: "المادة",
     productDetPTamper: "تغليف ",
     productDetPRecyclable: "قابلة لإعادة التدوير",
+    PackagingType: "نوع التغليف",
     productDetStandPallet: "طبالي",
     productDetheigPallet: "الارتفاع التقريبي للطبالي (سم)",
     productDetLengPallet: "الطول التقريبي للطبالي (سم)",

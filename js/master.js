@@ -35,18 +35,27 @@ if (productSection) {
     products.forEach((product) => {
       if (product.id == 1) {
         let h3 = document.createElement("h3");
+        h3.id = "JERRYCANS";
         h3.dataset.i18n = "productSectionCANS";
         localStorage.getItem("lang") === "ar"
           ? (h3.innerText = `جراكن`)
           : (h3.innerText = `JERRY CANS`);
         listProduct.appendChild(h3);
       }
-      if (product.id == 8) {
+      if (product.id == 9) {
         let h3 = document.createElement("h3");
         h3.dataset.i18n = "productSectionBOTTLES";
         localStorage.getItem("lang") === "ar"
-          ? (h3.innerText = `عبوات`)
-          : (h3.innerText = `BOTTLES`);
+          ? (h3.innerText = `زجاجات الصابون والمنظفات`)
+          : (h3.innerText = `SOAP & DETERGENT BOTTLES`);
+        listProduct.appendChild(h3);
+      }
+      if (product.id == 13) {
+        let h3 = document.createElement("h3");
+        h3.dataset.i18n = "BLEACH, SANITIZERS & SPRAY BOTTLES";
+        localStorage.getItem("lang") === "ar"
+          ? (h3.innerText = `المبيضات والمعقمات وزجاجات الرش`)
+          : (h3.innerText = `SOAP & DETERGENT BOTTLES`);
         listProduct.appendChild(h3);
       }
       // create new elment item
@@ -99,6 +108,10 @@ if (productDetails) {
     detail.querySelector("h1").innerText = thisproduct.name;
     detail.querySelector(".img-main").src =
       "../img/PRODUCTS/" + thisproduct.imge;
+    detail.querySelector(".thread").innerText = thisproduct.thread;
+    detail.querySelector(".code").innerText = thisproduct.code;
+    detail.querySelector(".proDet1").innerText = thisproduct.proDet1;
+    detail.querySelector(".proDet2").innerText = thisproduct.proDet2;
     detail.querySelector(".DesP").innerText = thisproduct.DesP;
     detail.querySelector(".DesLi1").innerText = thisproduct.DesLi1;
     detail.querySelector(".DesLi2").innerText = thisproduct.DesLi2;
@@ -115,8 +128,12 @@ if (productDetails) {
     detail.querySelector(".width").innerText = thisproduct.width;
     detail.querySelector(".neck").innerText = thisproduct.neck;
     detail.querySelector(".material").innerText = thisproduct.material;
+    detail.querySelector(".Specification8").innerText =
+      thisproduct.Specification8;
     detail.querySelector(".tamper").innerText = thisproduct.tamper;
     detail.querySelector(".recyclable").innerText = thisproduct.recyclable;
+    detail.querySelector(".PackagingType").innerText =
+      thisproduct.PackagingType;
     detail.querySelector(".imd-Product-one").src =
       "../img/PRODUCTS/detiles/" + thisproduct.imgProductOne;
     // detail.querySelector(".imd-Product-tow").src =
@@ -133,6 +150,10 @@ if (productDetails) {
     detail.querySelector(".layers-pallet").innerText = thisproduct.layersPallet;
     detail.querySelector(".units-pallet").innerText = thisproduct.unitsPallet;
     detail.querySelector(".number-pallet").innerText = thisproduct.numberPallet;
+    detail.querySelector(".downloadimge1").src =
+      "../img/PRODUCTS/Download/" + thisproduct.downloadimge1;
+    detail.querySelector(".downloadimge2").src =
+      "../img/PRODUCTS/Download/" + thisproduct.downloadimge2;
     detail.querySelector(".Download").innerText = thisproduct.downloadtext;
     detail.querySelector(".Download").href =
       "../img/PRODUCTS/pdf/" + thisproduct.downloadHref;

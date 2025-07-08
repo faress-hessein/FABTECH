@@ -20,7 +20,7 @@ a {
 }
 :root {
   --main-color: #ffffff;
-  --second-color: #ef1d24;
+  --second-color: #c00000;
   --FontAwesome: "Font Awesome 6 Free";
 }
 .special-btn-o {
@@ -575,6 +575,15 @@ footer p {
   -o-border-radius: 10px;
   min-height: 250px;
 }
+.welcome .text {
+  display: flex;
+}
+.welcome .text span {
+  color: var(--second-color);
+  font-weight: bold;
+}
+.welcome .text .space {
+}
 /* end welcome */
 
 /* start time-line */
@@ -1106,6 +1115,15 @@ footer p {
 .product-details p {
   font-size: 15px;
 }
+.product-details .co-gray {
+  color: gray;
+}
+.product-details .thread {
+  background-color: gray;
+  color: white;
+  padding: 1px 20px;
+  font-weight: 600;
+}
 .product-details .box.Description ul {
   margin: 0 !important;
   padding-left: 25px !important;
@@ -1114,8 +1132,6 @@ footer p {
   font-size: 15px;
   list-style: disc !important;
   display: list-item !important;
-}
-.product-details h5 {
 }
 .product-details {
   padding-top: 100px;
@@ -1137,8 +1153,11 @@ footer p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 5px;
-  padding: 0 10px;
+
+  padding: 3px 10px;
+}
+.product-details .detiles-info .box div.bg-d {
+  background-color: #dddddd91;
 }
 .product-details .detiles-info .box-info div:not(:last-of-type),
 .product-details .detiles-info .box div:not(:last-of-type) {
@@ -1252,7 +1271,6 @@ footer p {
 .product-details .box-info ul {
   padding: 0;
   margin-bottom: 0;
-  margin-top: 40px;
 }
 .product-details .box-info ul .row > div {
   padding: 0;
@@ -1260,13 +1278,24 @@ footer p {
 .product-details .box-info li {
   display: inline-block;
   width: 100%;
+  padding: 0px 1px;
+}
+.product-details .fillter-btn li.none,
+.product-details .fillter-btn li.none {
+  padding: 0px;
+}
+.product-details .fillter-btn .paddings-1 {
+  padding-left: 1px !important;
+}
+.product-details .fillter-btn .paddinge-1 {
+  padding-right: 1px !important;
 }
 .product-details .box-info ul a {
   display: block;
   width: 100%;
   text-align: center;
   text-transform: capitalize;
-  color: black;
+  color: gray;
   border: 1px solid black;
   margin: 0;
   padding: 10px 0;
@@ -1276,10 +1305,24 @@ footer p {
   -moz-transition: 0.3s;
   -ms-transition: 0.3s;
   -o-transition: 0.3s;
+  background-color: #3333;
 }
 .product-details .box-info ul a.active {
   background-color: var(--second-color);
   color: #d3cbcb !important;
+}
+.product-details .box-info span:first-child {
+  margin: auto;
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid gray;
+  color: gray;
+  font-size: 15px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.product-details .links a {
+  color: gray;
 }
 /* .product-details .box-info ul li.active {
   background-color: var(--second-color);
@@ -1291,6 +1334,7 @@ footer p {
   padding: 7px;
   font-weight: 600;
   color: var(--main-color);
+  margin: 0;
 }
 .detiles-info {
   border: 1px solid black;
@@ -1306,6 +1350,37 @@ footer p {
   height: 200px;
   width: 250px;
 }
+.product-details .box .or {
+  padding: 10px;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: gray;
+}
+.product-details .box .downloadimge2 {
+  height: 150px;
+}
+.product-details .box-Download a {
+  color: var(--second-color);
+  border-bottom: 1.5px solid;
+}
+.product-details .box-Download span {
+  text-align: center;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.product-details .detiles-info .box-Download div {
+  justify-content: center;
+}
+/* لون الخلفية للأجزاء الأخرى
+  .tab:nth-child(1),
+  .tab:nth-child(2),
+  .tab:nth-child(4),
+  .tab:nth-child(5) {
+    background-color: #f0f0f0;
+    color: #999;
+  } */
 /* .detiles-info span,
 .detiles-info a {
   color: black;
@@ -1316,9 +1391,17 @@ footer p {
 }
 @media (max-width: 768px) {
   .detiles-info {
-    height: 580px;
+    height: 650px;
     flex-direction: column;
     align-items: center;
+  }
+  .product-details .box-Download {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .product-details .detiles-info .box p {
+    display: block !important;
+    text-align: center !important;
   }
 }
 @media (max-width: 568px) {
@@ -1364,7 +1447,7 @@ footer p {
   background-color: white;
 }
 footer {
-  background-color: #f2f2f2;
+  background-color: white;
 }
 /* end landing-contact*/
 
