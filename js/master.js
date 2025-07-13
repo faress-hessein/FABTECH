@@ -62,7 +62,14 @@ if (productSection) {
       let newProduct = document.createElement("a");
       newProduct.href = "product-details.html?id=" + product.id;
       let div = document.createElement("div");
-      div.classList.add("item", "col-lg-3", "col-md-4", "col-sm-6", "mb-4");
+      div.classList.add(
+        "item",
+        "col-xl-3",
+        "col-lg-3",
+        "col-md-4",
+        "col-6",
+        "mb-4"
+      );
       div.innerHTML = `
             <div class="box">
               <img
@@ -182,6 +189,13 @@ if (productDetails) {
       `;
       bottleColors.appendChild(span);
     }
+
+    const threadElement = detail.querySelector(".thread");
+    if (threadElement) {
+      if (threadElement.innerText.trim() === "") {
+        threadElement.style.backgroundColor = "white";
+      }
+    }
   }
 
   // handel btn box-info
@@ -272,19 +286,47 @@ const setLanguage = (language) => {
   }
 };
 
-// swiper
-let swiperPage = document.querySelector(".swiper");
-if (swiperPage) {
-  var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
+// // swiper
+// let swiperPage = document.querySelector(".swiper");
+// if (swiperPage) {
+//   var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 3,
+//     spaceBetween: 30,
+//     freeMode: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//   });
+// }
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (document.querySelector(".mySwiper")) {
+    const swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3, // بشكل افتراضي في الشاشات الكبيرة
+      spaceBetween: 30,
+      freeMode: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        // شاشة صغيرة (أقل من 480px)
+        480: {
+          slidesPerView: 1,
+        },
+        // شاشة متوسطة (من 481px إلى 768px)
+        768: {
+          slidesPerView: 2,
+        },
+        // شاشة كبيرة (أكثر من 768px)
+        1200: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  }
+});
 
 // let productDetails = document.querySelector(".product-details")
 if (productDetails) {

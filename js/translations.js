@@ -12,7 +12,7 @@ const translations = {
     titleProductsDetails: "Products Details | Fabtech",
     home: "HOME",
     about: "ABOUT US",
-    machines: "Our projects",
+    machines: "projects",
     molds: "Engineering",
     contact: "CONTACT US",
     products: "PRODUCTS",
