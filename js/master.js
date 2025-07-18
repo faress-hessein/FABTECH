@@ -45,6 +45,7 @@ if (productSection) {
       if (product.id == 9) {
         let h3 = document.createElement("h3");
         h3.dataset.i18n = "productSectionBOTTLES";
+        h3.id = "BOTTLES";
         localStorage.getItem("lang") === "ar"
           ? (h3.innerText = `زجاجات الصابون والمنظفات`)
           : (h3.innerText = `SOAP & DETERGENT BOTTLES`);
@@ -78,6 +79,7 @@ if (productSection) {
                 loading="lazy"
               />
               <span>${product.name}</span>
+              <p>${product.code}</p>
               <a href="${newProduct}">View Details</a>
           </div>   `;
       listProduct.appendChild(div);
