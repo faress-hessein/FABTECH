@@ -56,7 +56,7 @@ if (productSection) {
         h3.dataset.i18n = "BLEACH, SANITIZERS & SPRAY BOTTLES";
         localStorage.getItem("lang") === "ar"
           ? (h3.innerText = `المبيضات والمعقمات وزجاجات الرش`)
-          : (h3.innerText = `SOAP & DETERGENT BOTTLES`);
+          : (h3.innerText = `BLEACH, SANITIZERS & SPRAY BOTTLES`);
         listProduct.appendChild(h3);
       }
       // create new elment item
@@ -134,6 +134,7 @@ if (productDetails) {
     detail.querySelector(".weight").innerText = thisproduct.weight;
     detail.querySelector(".height").innerText = thisproduct.height;
     detail.querySelector(".length").innerText = thisproduct.length;
+    // detail.querySelector(".Diameter").innerText = thisproduct.Diameter;
     detail.querySelector(".width").innerText = thisproduct.width;
     detail.querySelector(".neck").innerText = thisproduct.neck;
     detail.querySelector(".material").innerText = thisproduct.material;
