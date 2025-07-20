@@ -638,7 +638,7 @@
     "unitsPallet": "180",
     "numberPallet": "1260",
     "downloadimge1": "1L Clorox Data.jpg",
-    "downloadimge2": "",
+    "downloadimge2": "1L-Clorox code.png",
     "downloadtext": "Download: 1L Data Sheet (PDF)",
     "downloadHref": "1L Clorox.pdf",
     "Printing": "Printing Not Available for this Product."
@@ -684,7 +684,7 @@
     "unitsPallet": "126",
     "numberPallet": "1008",
     "downloadimge1": "1.5L DAC Data.jpg",
-    "downloadimge2": "",
+    "downloadimge2": "1.5L code.png",
     "downloadtext": "Download: 1.5L DAC Data Sheet (PDF)",
     "downloadHref": "1.5L DAC.pdf",
     "Printing": "Printing Not Available for this Product."
@@ -692,7 +692,7 @@
   {
     "id": 16,
     "proDet1": "BOTTLES/",
-    "proDet2": "1 Litre",
+    "proDet2": "1L Softener",
     "thread": "",
     "code": " FAB-BLW-SOFT1L",
     "imge": "Fabric Softener 1L.png",
@@ -730,7 +730,7 @@
     "unitsPallet": "210",
     "numberPallet": "1470",
     "downloadimge1": "1L Softner_Data.jpg",
-    "downloadimge2": "",
+    "downloadimge2": "1 Litre Softener code.png",
     "downloadtext": "Download: 1L Softner Data Sheet (PDF)",
     "downloadHref": "1L Softner.pdf",
     "Printing": "Printing Not Available for this Product."
@@ -776,7 +776,7 @@
     "unitsPallet": "55",
     "numberPallet": "385",
     "downloadimge1": "1L Shampoo_Data.jpg",
-    "downloadimge2": "",
+    "downloadimge2": "1L Shampoo code.png",
     "downloadtext": "Download: 1L Shampoo Data Sheet (PDF)",
     "downloadHref": "1L Shampoo.pdf",
     "Printing": "Printing Not Available for this Product."
